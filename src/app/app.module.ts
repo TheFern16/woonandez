@@ -22,6 +22,14 @@ import { ProjectsComponent } from './projects/projects.component';
       {
         path: 'home',
         component: HomeComponent
+      },
+      {
+        path: 'aboutme',
+        component: AboutmeComponent
+      },
+      {
+        path: 'apps',
+        component: ProjectsComponent
       }
     ])
   ],
