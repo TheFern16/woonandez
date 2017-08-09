@@ -20,24 +20,25 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserModule,
     RouterModule.forRoot([
       {
-        path: 'home',
-        component: HomeComponent
+        path: 'apps',
+        component: ProjectsComponent
       },
       {
         path: 'aboutme',
         component: AboutmeComponent
       },
       {
-        path: 'apps',
-        component: ProjectsComponent
+        path: 'home',
+        component: HomeComponent
       },
       {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
       }
-    ])
+    ], { enableTracing: true })
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
