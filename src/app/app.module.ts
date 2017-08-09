@@ -30,6 +30,11 @@ import { ProjectsComponent } from './projects/projects.component';
       {
         path: 'apps',
         component: ProjectsComponent
+      },
+      {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
       }
     ])
   ],
