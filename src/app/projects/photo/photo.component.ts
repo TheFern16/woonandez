@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./photo.component.css']
 })
 export class PhotoComponent implements OnInit {
-  @Input('photo') photo: string;
+  @Input('photo') photo: { thumbnail: string, full: string };
 
   constructor() {
     console.log(this.photo)

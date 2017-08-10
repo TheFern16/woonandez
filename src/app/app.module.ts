@@ -9,7 +9,9 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+
+import { StateService } from './services/state.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { AppRoutingModule } from './app-routing.module'
     AppRoutingModule
   ],
   exports: [],
-  providers: [],
+  providers: [ StateService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

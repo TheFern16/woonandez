@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from '../services/state.service';
 
 @Component({
   selector: 'app-projects',
@@ -32,7 +33,9 @@ export class ProjectsComponent implements OnInit {
       full: 'https://ibb.co/ckeeBa'
     }];
 
-  constructor() {}
+  constructor(private stateService: StateService) {
+
+  }
 
   ngOnInit() {
   }
