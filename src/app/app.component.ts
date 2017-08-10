@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  images = ['https://ibb.co/dbLmra', 'https://ibb.co/mjOd4v', 'https://ibb.co/hLHGra', 'https://ibb.co/dcB9Ba'];
 }
