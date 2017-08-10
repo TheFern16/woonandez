@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PhotoComponent } from './projects/photo/photo.component';
 
 const appRoutes: Routes = [
       {
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     HomeComponent,
     AboutmeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
