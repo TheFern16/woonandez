@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  images = ['https://ibb.co/dbLmra', 'https://ibb.co/mjOd4v', 'https://ibb.co/hLHGra', 'https://ibb.co/dcB9Ba'];
 
   constructor() { }
 
