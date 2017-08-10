@@ -9,25 +9,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
 
-const appRoutes: Routes = [
-      {
-        path: 'apps',
-        component: ProjectsComponent
-      },
-      {
-        path: 'aboutme',
-        component: AboutmeComponent
-      },
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-      }
-    ]
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
@@ -40,14 +22,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
-  exports: [RouterModule],
+  exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {
-  constructor(router: Router) {
-    console.log(router.config)
-  }
+  constructor() {}
 }
