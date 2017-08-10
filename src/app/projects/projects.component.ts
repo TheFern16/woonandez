@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  photos = ['https://preview.ibb.co/mDJHxF/Screen_Shot_2017_08_10_at_10_07_53_AM.png', 'https://preview.ibb.co/nQg9Ba/Screen_Shot_2017_08_10_at_10_08_06_AM.png', 'https://preview.ibb.co/cwDpBa/Screen_Shot_2017_08_10_at_10_08_18_AM.png', 'https://preview.ibb.co/eAnhWa/Screen_Shot_2017_08_10_at_10_08_40_AM.png'];
+  photos = [
+    'https://preview.ibb.co/mDJHxF/Screen_Shot_2017_08_10_at_10_07_53_AM.png',
+    'https://preview.ibb.co/nQg9Ba/Screen_Shot_2017_08_10_at_10_08_06_AM.png',
+    'https://preview.ibb.co/cwDpBa/Screen_Shot_2017_08_10_at_10_08_18_AM.png',
+    'https://preview.ibb.co/eAnhWa/Screen_Shot_2017_08_10_at_10_08_40_AM.png',
+    'https://preview.ibb.co/ghzwra/its_Cut_Time_thumb.png',
+    'https://preview.ibb.co/mW4qHF/its_Cut_Time1.png'];
 
   constructor() {}
 
@@ -14,3 +20,7 @@ export class ProjectsComponent implements OnInit {
   }
 
 }
+
+
+// https://ibb.co/idiNWa
+// https://ibb.co/ckeeBa
