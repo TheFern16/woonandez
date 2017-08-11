@@ -17,13 +17,22 @@ export class StateService {
       full: 'https://ibb.co/dcB9Ba'
     },
     {
+      thumbnail: 'https://preview.ibb.co/j7qPuv/Screen_Shot_2017_08_11_at_11_19_35_AM.png',
+      full: 'https://ibb.co/iDqeSF'
+    },
+    {
+      thumbnail: 'https://preview.ibb.co/bUNnEv/Screen_Shot_2017_08_11_at_11_19_39_AM.png',
+      full: 'https://ibb.co/j5cb7F'
+    },
+    {
       thumbnail: 'https://preview.ibb.co/ghzwra/its_Cut_Time_thumb.png',
       full: 'https://ibb.co/idiNWa'
     },
     {
       thumbnail: 'https://preview.ibb.co/mW4qHF/its_Cut_Time1.png',
       full: 'https://ibb.co/ckeeBa'
-    }];
+    }
+  ];
 
   constructor() {}
 
