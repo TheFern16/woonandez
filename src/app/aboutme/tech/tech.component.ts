@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tech',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tech.component.css']
 })
 export class TechComponent implements OnInit {
+  @Input('skill') skill: { link: string, img: string };
 
   constructor() { }
 

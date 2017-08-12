@@ -8,11 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
+import { TechComponent } from './aboutme/tech/tech.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { StateService } from './services/state.service';
-import { TechComponent } from './aboutme/tech/tech.component';
+import { SkillsService } from './services/skills.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { TechComponent } from './aboutme/tech/tech.component';
     AppRoutingModule
   ],
   exports: [],
-  providers: [ StateService ],
+  providers: [ StateService, SkillsService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

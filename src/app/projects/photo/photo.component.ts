@@ -9,9 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PhotoComponent implements OnInit {
   @Input('photo') photo: { thumbnail: string, full: string };
 
-  constructor() {
-    console.log(this.photo)
-  }
+  constructor() {}
 
   ngOnInit() {
   }
