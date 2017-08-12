@@ -12,6 +12,7 @@ import { PhotoComponent } from './projects/photo/photo.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { StateService } from './services/state.service';
+import { TechComponent } from './aboutme/tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StateService } from './services/state.service';
     HomeComponent,
     AboutmeComponent,
     ProjectsComponent,
-    PhotoComponent
+    PhotoComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,
