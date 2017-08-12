@@ -66,9 +66,19 @@ export class SkillsService {
       desc: "backbonejs"
     },
     {
-      href: "https://dashboard.heroku.com/",
+      href: "https://www.heroku.com",
       src: "../../assets/heroku.svg",
       desc: "heroku"
+    },
+    {
+      href: "https://mochajs.org/",
+      src: "../../assets/mocha.svg",
+      desc: "mocha"
+    },
+    {
+      href: "http://chaijs.com/",
+      src: "../../assets/chai.png",
+      desc: "chai"
     }
   ];
 
