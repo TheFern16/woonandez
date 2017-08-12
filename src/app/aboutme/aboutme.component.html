@@ -16,5 +16,5 @@
 </div>
 
 <div class="row">
-  <app-tech></app-tech>
+  <app-tech *ngFor="let skill of skills" [skill]="skill"></app-tech>
 </div>

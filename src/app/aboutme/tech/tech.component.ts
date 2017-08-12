@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tech.component.css']
 })
 export class TechComponent implements OnInit {
-  @Input('skill') skill: { link: string, img: string };
+  @Input('skill') skill: { href: string, src: string };
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

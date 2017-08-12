@@ -13,7 +13,6 @@ export class AboutmeComponent implements OnInit {
 
   ngOnInit() {
     this.skills = this.skillsService.skills;
-    console.log(this.skills);
   }
 
 }
