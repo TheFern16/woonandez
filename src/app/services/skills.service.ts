@@ -59,6 +59,16 @@ export class SkillsService {
       href: "http://mongoosejs.com/docs/connections.html",
       src: "../../assets/mongoose.png",
       desc: 'mongoose'
+    },
+    {
+      href: "http://backbonejs.org/",
+      src: "../../assets/backbone.png",
+      desc: "backbonejs"
+    },
+    {
+      href: "https://dashboard.heroku.com/",
+      src: "../../assets/heroku.svg",
+      desc: "heroku"
     }
   ];
 
