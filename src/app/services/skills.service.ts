@@ -79,6 +79,11 @@ export class SkillsService {
       href: "http://chaijs.com/",
       src: "../../assets/chai.png",
       desc: "chai"
+    },
+    {
+      href: "https://angularjs.org/",
+      src: "../../assets/angularJS.png",
+      desc: "angularJS"
     }
   ];
 
