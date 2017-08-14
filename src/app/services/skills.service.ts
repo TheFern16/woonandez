@@ -84,6 +84,11 @@ export class SkillsService {
       href: "https://angularjs.org/",
       src: "../../assets/angularJS.png",
       desc: "angularJS"
+    },
+    {
+      href: "https://www.highcharts.com",
+      src: "../../assets/highcharts.png",
+      desc: "highcharts"
     }
   ];
 
