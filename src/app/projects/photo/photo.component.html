@@ -1,6 +1,10 @@
-<div class="col-xs-6 col-md-3">
-  <a [href]="photo.full" target="_blank" class="thumbnail">
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
     <img [src]="photo.thumbnail" alt="photo.desc">
-  </a>
+    <div class="caption">
+      <h3>Thumbnail label</h3>
+      <p>...</p>
+      <p><a [href]="photo.full" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    </div>
+  </div>
 </div>
-
