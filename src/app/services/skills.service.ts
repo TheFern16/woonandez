@@ -89,6 +89,11 @@ export class SkillsService {
       href: "https://www.highcharts.com",
       src: "../../assets/highcharts.png",
       desc: "highcharts"
+    },
+    {
+      href: "http://redux.js.org/",
+      src: "../../assets/redux.png",
+      desc: "redux"
     }
   ];
 
