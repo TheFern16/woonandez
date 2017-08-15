@@ -24,4 +24,8 @@ export class AboutmeComponent implements OnInit {
     }
   }
 
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
+
 }
