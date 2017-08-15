@@ -24,8 +24,11 @@ export class AboutmeComponent implements OnInit {
     }
   }
 
-  toggleModal() {
-    this.showModal = !this.showModal;
+  toggleModal(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('modalWrapper') || e.target.classList.contains('btn')) {
+      this.showModal = !this.showModal;
+    }
   }
 
 }

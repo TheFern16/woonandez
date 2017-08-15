@@ -5,7 +5,7 @@
   In my free time I enjoy playing golf with friends, working out, or playing FIFA.</p>
   <p>
     <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/matthewafernandez/" role="button" target="blank">Linked In</a>
-    <button class="btn btn-primary btn-lg" (click)="toggleModal()">More Info</button>
+    <button class="btn btn-primary btn-lg" (click)="toggleModal($event)">More Info</button>
   </p>
 </div>
 
@@ -33,14 +33,11 @@
    <a href="https://ibb.co/kgbuSF"><img src="https://thumb.ibb.co/kgbuSF/16903435_10154366602087285_119349730212327431_o.jpg" alt="16903435 10154366602087285 119349730212327431 o" border="0" /></a>
   </div> -->
 
-<div class="modalWrapper" [style.display]="getStyle()">
+<div class="modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)" >
   <div class="miniWrapper">
-
     <div class="modalHeader">
       <h2>Edit Profile</h2>
       <div (click)="toggleModal()">&times;</div>
     </div>
-
-
   </div>
 </div>
