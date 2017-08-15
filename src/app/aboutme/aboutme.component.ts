@@ -8,11 +8,20 @@ import { SkillsService } from '../services/skills.service';
 })
 export class AboutmeComponent implements OnInit {
   skills = [];
+  showModal = false;
 
   constructor(private skillsService: SkillsService) {}
 
   ngOnInit() {
     this.skills = this.skillsService.skills;
+  }
+
+  getStyle() {
+    if (this.showModal === false) {
+      return 'none';
+    } else {
+      return 'block';
+    }
   }
 
 }
