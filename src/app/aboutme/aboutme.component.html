@@ -15,24 +15,30 @@
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
   <div class="modal-dialog modal-lg miniWrapper" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Little Known Facts About Me:</h5>
-      </div>
       <div class="modal-body">
 
-        <div class="card-group">
-
-          <div class="card">
+  <!--       <div class="card">
+          <div class="card-header">
             <img class="card-img-top" src="https://thumb.ibb.co/kgbuSF/16903435_10154366602087285_119349730212327431_o.jpg" alt="Card image cap">
+            Here
+          </div>
           <div class="card-body">
             <p class="card-text">I am currently ranked 20,000 out of 1.7 million players in FIFA.</p>
             <p class="card-text">I used to build computers, and program in High School.</p>
             <p class="card-text">I played in a punk band for 6 years.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 08/15/2017</small>
-            </p>
           </div>
+        </div> -->
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
 
+        <div class="card-group">
           <div class="card">
             <img class="card-img-top" src="https://preview.ibb.co/iRSJ9v/IMG_1954.jpg">
             <div class="card-body">
@@ -45,9 +51,8 @@
             <div class="card-body">
               <p class="card-text">I am an ex NCAA Division III Collegiate Athlete.</p>
             </div>
+            <small class="text-muted">Last updated 08/15/2017</small>
           </div>
-
-        </div>
 
       </div>
     </div>

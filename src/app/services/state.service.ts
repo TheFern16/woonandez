@@ -26,7 +26,7 @@ export class StateService {
     //   thumbnail: 'https://preview.ibb.co/eAnhWa/Screen_Shot_2017_08_10_at_10_08_40_AM.png',
     //   full: 'https://ibb.co/dcB9Ba',
     //   github: 'https://github.com/woonandez/hippityhop',
-    //   desc: 'Once '
+    //   desc: 'Once the user is able to '
     // },
     {
       appName: 'Studdy Buddy',
