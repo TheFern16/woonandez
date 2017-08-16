@@ -12,9 +12,7 @@ import { TechComponent } from './aboutme/tech/tech.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { StateService } from './services/state.service';
-import { SkillsService } from './services/skills.service';
-import { FunService } from './services/fun.service';
+import { StateService, SkillsService, FunService } from './services';
 
 
 @NgModule({
