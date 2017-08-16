@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { StateService } from './services/state.service';
 import { SkillsService } from './services/skills.service';
+import { FunService } from './services/fun.service';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { SkillsService } from './services/skills.service';
     AppRoutingModule
   ],
   exports: [],
-  providers: [ StateService, SkillsService ],
+  providers: [ StateService, SkillsService, FunService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
