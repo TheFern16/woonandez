@@ -26,9 +26,11 @@
           </div>
         </div>
 
-        <app-randomfact class="card-deck"></app-randomfact>
+        <div class="card-deck">
+          <app-randomfact *ngFor="let fact of facts" [fact]="fact" class="card"></app-randomfact>
+        </div>
 
-        <small class="text-muted">Last updated 08/16/2017</small>
+        <small class="text-muted">Last updated 08/18/2017</small>
 
       </div>
     </div>
