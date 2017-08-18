@@ -94,6 +94,14 @@ export class SkillsService {
       href: "http://redux.js.org/",
       src: "../../assets/redux.png",
       desc: "redux"
+    }, {
+      href: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3",
+      src: "../../assets/css.svg",
+      desc: "css3"
+    }, {
+      href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      src: "../../assets/html.svg",
+      desc: "html5"
     }
   ];
 
