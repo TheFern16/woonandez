@@ -7,8 +7,8 @@
   </p>
 </div>
 
-<div class="row">
-  <app-tech *ngFor="let skill of skills" [skill]="skill"></app-tech>
+<div class="card-columns">
+  <app-tech class="card"*ngFor="let skill of skills" [skill]="skill"></app-tech>
 </div>
 
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
