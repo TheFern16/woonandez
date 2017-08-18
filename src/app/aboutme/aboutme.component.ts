@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from '../services/skills.service';
+import { SkillsService, FactService } from '../services/';
 
 @Component({
   selector: 'app-aboutme',
@@ -8,12 +8,14 @@ import { SkillsService } from '../services/skills.service';
 })
 export class AboutmeComponent implements OnInit {
   skills = [];
+  facts = [];
   showModal = false;
 
-  constructor(private skillsService: SkillsService) {}
+  constructor(private skillsService: SkillsService, private factsService: FactService) {}
 
   ngOnInit() {
     this.skills = this.skillsService.skills;
+    this.facts = this.factsService.facts;
   }
 
   getStyle() {
