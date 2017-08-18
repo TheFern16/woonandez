@@ -12,7 +12,7 @@ import { TechComponent } from './aboutme/tech/tech.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { StateService, SkillsService, FunService } from './services';
+import { StateService, SkillsService, FunService, FactService } from './services';
 import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 
 
@@ -32,7 +32,7 @@ import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
     AppRoutingModule
   ],
   exports: [],
-  providers: [ StateService, SkillsService, FunService ],
+  providers: [ StateService, SkillsService, FunService, FactService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
