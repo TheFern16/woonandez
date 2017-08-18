@@ -13,6 +13,7 @@ import { TechComponent } from './aboutme/tech/tech.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { StateService, SkillsService, FunService } from './services';
+import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { StateService, SkillsService, FunService } from './services';
     AboutmeComponent,
     ProjectsComponent,
     PhotoComponent,
-    TechComponent
+    TechComponent,
+    RandomfactComponent
   ],
   imports: [
     BrowserModule,
