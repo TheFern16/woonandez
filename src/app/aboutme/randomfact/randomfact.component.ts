@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-randomfact',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./randomfact.component.css']
 })
 export class RandomfactComponent implements OnInit {
-
+  @Input('fact') fact: { link: string, info: string };
   constructor() { }
 
   ngOnInit() {
