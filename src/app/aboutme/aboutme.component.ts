@@ -11,7 +11,9 @@ export class AboutmeComponent implements OnInit {
   facts = [];
   showModal = false;
 
-  constructor(private skillsService: SkillsService, private factsService: FactService) {}
+  constructor(
+    private skillsService: SkillsService,
+    private factsService: FactService) {}
 
   ngOnInit() {
     this.skills = this.skillsService.skills;
