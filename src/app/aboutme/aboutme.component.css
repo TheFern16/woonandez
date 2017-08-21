@@ -11,3 +11,12 @@
   opacity: 75%;
   background-color: rgba(0,0,0,0.2);
 }
+
+.card {
+  transition: .5s;
+  transform: scale(.9);
+}
+
+.card:hover {
+  transform: scale(1);
+}
