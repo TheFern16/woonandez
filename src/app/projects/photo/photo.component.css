@@ -6,3 +6,11 @@
 .card:hover {
   transform: scale(1);
 }
+
+a {
+  transform: scale(.9);
+}
+
+a:hover {
+  transform: scale(1);
+}

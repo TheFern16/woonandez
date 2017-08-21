@@ -1,0 +1,8 @@
+a {
+  transform: scale(1);
+  margin: .5em;
+}
+
+a:hover {
+  transform: scale(1.1);
+}

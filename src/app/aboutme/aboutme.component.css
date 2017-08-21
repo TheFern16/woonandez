@@ -20,3 +20,11 @@
 .card:hover {
   transform: scale(1);
 }
+
+button {
+  transform: scale(1);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
