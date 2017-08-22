@@ -13,6 +13,7 @@
 }
 
 .card {
+  border: none;
   transition: .5s;
   transform: scale(.9);
 }
