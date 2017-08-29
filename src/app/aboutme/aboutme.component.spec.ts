@@ -1,8 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+// component declarations * declarations
 import { AboutmeComponent } from './aboutme.component';
 import { TechComponent } from './tech/tech.component';
 import { RandomfactComponent } from './randomfact/randomfact.component';
+
+// service providers
+import { SkillsService, FactService } from '../services/';
 
 describe('AboutmeComponent', () => {
   let component: AboutmeComponent;
@@ -10,7 +14,8 @@ describe('AboutmeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutmeComponent, TechComponent, RandomfactComponent ]
+      declarations: [ AboutmeComponent, TechComponent, RandomfactComponent ],
+      providers: [ SkillsService, FactService ]
     })
     .compileComponents();
   }));
@@ -25,3 +30,4 @@ describe('AboutmeComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
