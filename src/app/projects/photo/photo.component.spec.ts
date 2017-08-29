@@ -16,6 +16,7 @@ describe('PhotoComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PhotoComponent);
     component = fixture.componentInstance;
+    component.photo = { appName: 'fake.com', thumbnail: 'fake.com', full: 'fake.com', github: 'fake.com', desc: 'fake.com'};
     fixture.detectChanges();
   });
 

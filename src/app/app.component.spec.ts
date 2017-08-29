@@ -5,8 +5,11 @@ import { RouterOutlet } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PhotoComponent } from './projects/photo/photo.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { TechComponent } from './aboutme/tech/tech.component';
+import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 
 
 describe('AppComponent', () => {
@@ -18,7 +21,9 @@ describe('AppComponent', () => {
         RouterOutlet,
         ProjectsComponent,
         HomeComponent,
-        AboutmeComponent
+        AboutmeComponent,
+        PhotoComponent,
+        RandomfactComponent
       ],
     }).compileComponents();
   }));
