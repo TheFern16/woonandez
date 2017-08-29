@@ -1,12 +1,24 @@
 import { TestBed, async } from '@angular/core/testing';
 
+import { RouterOutlet } from '@angular/router';
+
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { HomeComponent } from './home/home.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        NavbarComponent,
+        RouterOutlet,
+        ProjectsComponent,
+        HomeComponent,
+        AboutmeComponent
       ],
     }).compileComponents();
   }));
