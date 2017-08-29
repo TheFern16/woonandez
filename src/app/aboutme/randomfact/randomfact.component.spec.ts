@@ -16,6 +16,7 @@ describe('RandomfactComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(RandomfactComponent);
     component = fixture.componentInstance;
+    component.fact = { link: 'woonandez.com', info: 'this is my website'};
     fixture.detectChanges();
   });
 
@@ -23,3 +24,5 @@ describe('RandomfactComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

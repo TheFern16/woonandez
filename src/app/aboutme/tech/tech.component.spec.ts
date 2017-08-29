@@ -16,6 +16,7 @@ describe('TechComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TechComponent);
     component = fixture.componentInstance;
+    component.skill = { href: 'woonandez.com', src: 'woonandez.com', desc: 'this is my site'}
     fixture.detectChanges();
   });
 
