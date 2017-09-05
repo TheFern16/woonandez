@@ -102,6 +102,11 @@ export class SkillsService {
       href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       src: "../../assets/html.svg",
       desc: "html5"
+    },
+    {
+      href: "http://react-toolbox.com/#/",
+      src: "../../assets/reactToolbox.png",
+      desc: "react-toolbox"
     }
   ];
 
