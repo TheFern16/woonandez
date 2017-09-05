@@ -55,6 +55,20 @@ export class StateService {
       full: 'https://ibb.co/ckeeBa',
       github: 'https://github.com/oxford-commas/dingdong-its-cut-time',
       desc: 'Here is the landing page for It\'s Cut Time.  Users are able to see all of the local stylists which are servicing around them (represented by a pair of scissors).  They can directly message those stylists.  Once the user has decided to use their services; an official notification is sent to the stylist.  Allowing the stylist to either accept, or decline the cut.  The payment is done through the stripe API.'
+    },
+    {
+      appName: 'Enigma',
+      thumbnail: 'https://preview.ibb.co/eESKrv/Screen_Shot_2017_09_05_at_10_25_46_AM.png',
+      full: 'https://ibb.co/gn3sBv',
+      github: 'https://github.com/woonandez/enigma',
+      desc: 'This fun application uses vanilla node encryption, express, react toolbox, and bootstrap for styling. Given three inputs the application encrypts those inputs into a hashed value.  Once the user clicks encrypt a request is sent to the node server on the back end.  The server responds with a hashed value based on the values from the text fields that are sent over.'
+    },
+    {
+      appName: 'Enigma',
+      thumbnail: 'https://preview.ibb.co/b5p4PF/Screen_Shot_2017_09_05_at_10_25_50_AM.png',
+      full: 'https://ibb.co/im39rv',
+      github: 'https://github.com/woonandez/enigma',
+      desc: 'Once the user clicks the encrypt button a modal is used to display the hashed text.  The modal is the dialog react-toolbox component.  Once the user has hashed text they can then pass that hashed text back into the application.  Allowing them to decrypt that text.  A request is then sent to the node server.  The server then responds with the unhashed text.  I set react up to automatically populate the text boxes upon receipt of that response.'
     }
   ];
 
