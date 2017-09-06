@@ -16,8 +16,11 @@ export class FunWithTextComponent implements OnInit {
   ngOnInit() {}
 
   submitText(event) {
-    // console.log(this.outputText, this.inputText);
-    this.requestService.addOxfordComma('test');
+    console.log(this.outputText, this.inputText);
+    this.requestService.addOxfordComma(this.inputText)
+      .subscribe(response => {
+          this.outputText = JSON.stringify(response);
+        }, err => console.log(err));
   }
 
 }

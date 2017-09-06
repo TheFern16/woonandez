@@ -28,7 +28,7 @@ const addOxfordComma = (text) => {
 app.post('/api/oxfordComma', (req, res) => {
   addOxfordComma(req.body.text)
     .then((response) => {
-      res.send(response);
+      res.json(response);
     });
 });
 

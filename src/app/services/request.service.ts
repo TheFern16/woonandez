@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class RequestService {
   constructor(private http: HttpClient) {}
 
   addOxfordComma(text: string) {
-    return this.http.post('/api/oxfordComma', text);
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post('/api/oxfordComma', { text }, { headers });
   }
-
 
 }
