@@ -11,10 +11,20 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist'));
 
 
-app.post('/api/oxfordComma', function(req, res) {
-  console.log(req.body);
+// add oxford comma
+const addOxfordComma = (text) => {
+  console.log(text);
+}
+
+
+// routing
+app.post('/api/oxfordComma', (req, res) => {
+  addOxfordComma(req.body.text);
 })
 
+
+
+// listening to port 1337
 app.listen(port, () => {
   console.log(`I am listening to port #${port}`)
 });
