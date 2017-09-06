@@ -7,10 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./fun-with-text.component.css']
 })
 export class FunWithTextComponent implements OnInit {
+  inputText: string = '';
+  outputText: string = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  submitText(event) {
+    console.log(this.outputText, this.inputText);
+    console.log(event);
   }
 
 }
