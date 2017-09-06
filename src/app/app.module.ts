@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { StateService, SkillsService, FunService, FactService } from './services';
 import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
+import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
     ProjectsComponent,
     PhotoComponent,
     TechComponent,
-    RandomfactComponent
+    RandomfactComponent,
+    FunWithTextComponent
   ],
   imports: [
     BrowserModule,
