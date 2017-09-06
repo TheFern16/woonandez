@@ -26,8 +26,11 @@ const addOxfordComma = (text) => {
 
 // routing
 app.post('/api/oxfordComma', (req, res) => {
-  addOxfordComma(req.body.text);
-})
+  addOxfordComma(req.body.text)
+    .then((response) => {
+      res.send(response);
+    });
+});
 
 
 
