@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { RequestService } from '../services/request.service';
 
 @Component({
   selector: 'app-fun-with-text',
@@ -10,13 +11,13 @@ export class FunWithTextComponent implements OnInit {
   inputText: string = '';
   outputText: string = '';
 
-  constructor() {}
+  constructor(private requestService: RequestService ) {}
 
   ngOnInit() {}
 
   submitText(event) {
-    console.log(this.outputText, this.inputText);
-    console.log(event);
+    // console.log(this.outputText, this.inputText);
+    this.requestService.addOxfordComma('test');
   }
 
 }

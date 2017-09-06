@@ -1,12 +1,12 @@
-import { Http, Headers, Response } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
+@Injectable()
 export class RequestService {
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   addOxfordComma(text: string) {
-    const headers = new Headers({ 'Content-Type': 'applicaton/json' });
-    return this.http.post('/api/oxfordComma', text, { headers });
+    return this.http.post('/api/oxfordComma', text);
   }
 
 
