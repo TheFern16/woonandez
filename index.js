@@ -14,9 +14,10 @@ app.use(express.static(__dirname + '/dist'));
 // add oxford comma
 const addOxfordComma = (text) => {
   return new Promise((resolve, reject) => {
-    const addOComma = text.replace(/( and)/gi, ", and");
-    if (addOComma !== undefined && addOComma !== null) {
-      resolve(addOComma);
+    if (text.replace(/( and)/gi, ", and")) {
+      let addOComma = text.replace(/( and)/gi, ', and');
+      let testDouble = addOComma.replace(/(,, and)/gi, ', and');
+      resolve(testDouble);
     } else {
       reject(Error('woopsie'));
     }
