@@ -10,6 +10,12 @@ const addOxfordComma = (text) => {
   });
 }
 
+const encryptText = (text) => {
+  let finalText;
+  return new Promise((resolve, reject) => {
+  });
+}
+
 
 module.exports = {
   addOxfordComma
