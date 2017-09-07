@@ -24,16 +24,14 @@ const addOxfordComma = (text) => {
   });
 }
 
-
 // routing
 app.post('/api/oxfordComma', (req, res) => {
   addOxfordComma(req.body.text)
     .then((response) => {
+      console.log(JSON.parse(response), typeof response);
       res.json(response);
     });
 });
-
-
 
 // listening to port 1337
 app.listen(port, () => {

@@ -8,18 +8,17 @@ import { RequestService } from '../services/request.service';
   styleUrls: ['./fun-with-text.component.css']
 })
 export class FunWithTextComponent implements OnInit {
-  inputText: string = '';
-  outputText: string = '';
+  inputText: any = '';
+  outputText: any = '';
 
   constructor(private requestService: RequestService ) {}
 
   ngOnInit() {}
 
   submitText(event) {
-    console.log(this.outputText, this.inputText);
-    this.requestService.addOxfordComma(this.inputText)
+    this.requestService.addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
-          this.outputText = JSON.stringify(response);
+          this.outputText = response;
         }, err => console.log(err));
   }
 
