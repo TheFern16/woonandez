@@ -25,11 +25,10 @@ const encryptText = (text) => {
 }
 
 const decryptText = (text) => {
-  let result;
   return new Promise((resolve, reject) => {
-    if (text) {
+    if (typeof text === 'string') {
       let decryptedText = cipher.decipher.update(text, 'hex', 'utf8');
-      decryptedText = cipher.decipher.final('hex');
+      decryptedText += cipher.decipher.final('utf8');
       resolve(decryptedText);
     } else {
       reject(Error('woopsie'));
