@@ -10,26 +10,35 @@ import { RequestService } from '../services/request.service';
 export class FunWithTextComponent implements OnInit {
   inputText: any = '';
   outputText: any = '';
+  invokeFunction: string = 'Add Oxford Commas!';
 
   constructor(private requestService: RequestService ) {}
 
   ngOnInit() {}
 
-  submitText(event) {
+  setText(event)  {
+    this.invokeFunction = event.target.textContent;
+  }
+
+  handleRequest() {
+    console.log(this.invokeFunction);
+  }
+
+  submitText() {
     this.requestService.addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
           this.outputText = response;
         }, err => console.log(err));
   }
 
-  encryptText(event) {
+  encryptText() {
     this.requestService.encryptText(JSON.stringify(this.inputText))
       .subscribe(response => {
         this.outputText = response;
       }, err => console.log(err));
   }
 
-  decryptText(event) {
+  decryptText() {
     this.requestService.decryptText(JSON.stringify(this.inputText))
       .subscribe(response => {
         this.outputText = response;

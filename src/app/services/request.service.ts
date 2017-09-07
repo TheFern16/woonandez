@@ -16,7 +16,7 @@ export class RequestService {
   }
 
   decryptText(text: string) {
-    const headers = new HttpHeaders.set('Content-Type', 'application/json');
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
     return this.http.post('/api/decrypt', { text }, { headers });
   }
 
