@@ -2,6 +2,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+// helper functions
+const TextHelpers = require('./helperFunctions/textHelperFunctions');
+
 // server
 const app = express();
 const port = process.env.PORT || 1337;
@@ -10,23 +13,9 @@ const port = process.env.PORT || 1337;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist'));
 
-
-// add oxford comma
-const addOxfordComma = (text) => {
-  return new Promise((resolve, reject) => {
-    if (text.replace(/( and)/gi, ", and")) {
-      let testDouble = text.replace(/(,+)/gi, '');
-      let addOComma = testDouble.replace(/( and)/gi, ', and');
-      resolve(addOComma);
-    } else {
-      reject(Error('woopsie'));
-    }
-  });
-}
-
 // routing
 app.post('/api/oxfordComma', (req, res) => {
-  addOxfordComma(req.body.text)
+  TextHelpers.addOxfordComma(req.body.text)
     .then((response) => {
       res.json(response);
     });
