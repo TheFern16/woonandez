@@ -22,4 +22,18 @@ export class FunWithTextComponent implements OnInit {
         }, err => console.log(err));
   }
 
+  encryptText(event) {
+    this.requestService.encryptText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        this.outputText = response;
+      }, err => console.log(err));
+  }
+
+  decryptText(event) {
+    this.requestService.decryptText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        this.outputText = response;
+      }, err => console.log(err));
+  }
+
 }
