@@ -13,10 +13,12 @@ const addOxfordComma = (text) => {
 }
 
 const encryptText = (text) => {
+  let encryptedResult = '';
+  let encryptedText = cipher.cipher.update(text, 'utf8', 'hex');
+  encryptedText += cipher.cipher.final('hex');
   return new Promise((resolve, reject) => {
-    if (text) {
-      let encryptedText = cipher.cipher.update(text, 'utf8', 'hex');
-      encryptedText += cipher.cipher.final('hex');
+  encryptedResult = encryptedText;
+    if (encryptedResult !== '') {
       resolve(encryptedText);
     } else {
       reject(Error('woopsie'));
@@ -25,13 +27,15 @@ const encryptText = (text) => {
 }
 
 const decryptText = (text) => {
+  let decryptedResult = '';
+  let decryptedText = cipher.decipher.update(text, 'hex', 'utf8');
+  decryptedText += cipher.decipher.final('utf8');
   return new Promise((resolve, reject) => {
-    if (typeof text === 'string') {
-      let decryptedText = cipher.decipher.update(text, 'hex', 'utf8');
-      decryptedText += cipher.decipher.final('utf8');
+    decryptedResult = decryptedText;
+    if (decryptedResult !== '') {
       resolve(decryptedText);
     } else {
-      reject(Error('woopsie'));
+      reject(Error(reject));
     }
   })
 }

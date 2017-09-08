@@ -24,6 +24,7 @@ app.post('/api/oxfordComma', (req, res) => {
 app.post('/api/encrypt', (req, res) => {
   TextHelpers.encryptText(req.body.text)
     .then((response) => {
+      console.log(response, typeof response);
       res.json(response);
     });
 })

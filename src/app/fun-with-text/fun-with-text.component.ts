@@ -10,7 +10,7 @@ import { RequestService } from '../services/request.service';
 export class FunWithTextComponent implements OnInit {
   inputText: any = '';
   outputText: any = '';
-  invokeFunction: string = 'Add Oxford Commas!';
+  invokeFunction: any = 'Add Oxford Commas!';
 
   constructor(private requestService: RequestService ) {}
 
@@ -21,10 +21,17 @@ export class FunWithTextComponent implements OnInit {
   }
 
   handleRequest() {
-    console.log(this.invokeFunction);
+    console.log(this.invokeFunction, this.inputText);
+    if (this.invokeFunction === 'Add Oxford Commas!') {
+      this.addOxfordCommas();
+    } else if (this.invokeFunction === 'Encrypt Your Text') {
+      this.encryptText();
+    } else {
+      this.decryptText();
+    }
   }
 
-  submitText() {
+  addOxfordCommas() {
     this.requestService.addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
           this.outputText = response;
@@ -34,6 +41,7 @@ export class FunWithTextComponent implements OnInit {
   encryptText() {
     this.requestService.encryptText(JSON.stringify(this.inputText))
       .subscribe(response => {
+        console.log('encrypt', response);
         this.outputText = response;
       }, err => console.log(err));
   }
@@ -41,6 +49,7 @@ export class FunWithTextComponent implements OnInit {
   decryptText() {
     this.requestService.decryptText(JSON.stringify(this.inputText))
       .subscribe(response => {
+        console.log('decrypt', response);
         this.outputText = response;
       }, err => console.log(err));
   }
