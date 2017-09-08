@@ -1,4 +1,4 @@
-const cipher = require('../hidden/config');
+// const cipher = require('../hidden/config');
 
 const addOxfordComma = (text) => {
   return new Promise((resolve, reject) => {
