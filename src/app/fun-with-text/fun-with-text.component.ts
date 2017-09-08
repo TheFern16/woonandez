@@ -21,37 +21,35 @@ export class FunWithTextComponent implements OnInit {
   }
 
   handleRequest() {
-    console.log(this.invokeFunction, this.inputText);
     if (this.invokeFunction === 'Add Oxford Commas!') {
       this.addOxfordCommas();
-    } else if (this.invokeFunction === 'Encrypt Your Text') {
-      this.encryptText();
-    } else {
-      this.decryptText();
     }
   }
 
   addOxfordCommas() {
-    this.requestService.addOxfordComma(JSON.stringify(this.inputText))
+    this.requestService
+      .addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
-          this.outputText = response;
+          return this.outputText = response;
         }, err => console.log(err));
   }
 
-  encryptText() {
-    this.requestService.encryptText(JSON.stringify(this.inputText))
-      .subscribe(response => {
-        console.log('encrypt', response);
-        this.outputText = response;
-      }, err => console.log(err));
-  }
+  // encryptText() {
+  //   this.requestService
+  //     .encryptText(JSON.stringify(this.inputText))
+  //     .subscribe(response => {
+  //       console.log('encrypt', response);
+  //       return this.outputText = response;
+  //     }, err => console.log(err));
+  // }
 
-  decryptText() {
-    this.requestService.decryptText(JSON.stringify(this.inputText))
-      .subscribe(response => {
-        console.log('decrypt', response);
-        this.outputText = response;
-      }, err => console.log(err));
-  }
+  // decryptText() {
+  //   this.requestService
+  //     .decryptText(JSON.stringify(this.inputText))
+  //     .subscribe(response => {
+  //       console.log('decrypt', response);
+  //       return this.outputText = response;
+  //     }, err => console.log(err));
+  // }
 
 }
