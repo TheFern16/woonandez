@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // helper functions
-// const TextHelpers = require('./helperFunctions/textHelperFunctions');
+const TextHelpers = require('./helperFunctions/textHelperFunctions');
 
 // server
 const app = express();
