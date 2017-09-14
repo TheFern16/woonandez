@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { SkillsService, FactService, RequestService } from '../services/';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -12,11 +11,7 @@ export class AboutmeComponent implements OnInit {
   facts: any = [];
   showModal = false;
 
-  constructor(
-    // private skillsService: SkillsService,
-    // private factsService: FactService,
-    // private requestService: RequestService,
-    private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.http.get('/api/skills')
