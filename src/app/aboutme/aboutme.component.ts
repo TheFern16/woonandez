@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService, FactService } from '../services/';
+import { SkillsService, FactService, RequestService } from '../services/';
 
 @Component({
   selector: 'app-aboutme',
@@ -16,6 +16,8 @@ export class AboutmeComponent implements OnInit {
     private factsService: FactService) {}
 
   ngOnInit() {
+
+
     this.skills = this.skillsService.skills;
     this.facts = this.factsService.facts;
   }

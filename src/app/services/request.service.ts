@@ -10,14 +10,12 @@ export class RequestService {
     return this.http.post('/api/oxfordComma', { text }, { headers });
   }
 
-  encryptText(text: string) {
-    const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post('/api/encrypt', { text }, { headers });
+  fetchSkills() {
+    return this.http.get('/api/skills');
   }
 
-  decryptText(text: string) {
-    const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post('/api/decrypt', { text }, { headers });
+  fetchFacts() {
+    return this.http.get('/api/facts');
   }
 
 }
