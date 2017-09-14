@@ -33,23 +33,4 @@ export class FunWithTextComponent implements OnInit {
           return this.outputText = response;
         }, err => console.log(err));
   }
-
-  // encryptText() {
-  //   this.requestService
-  //     .encryptText(JSON.stringify(this.inputText))
-  //     .subscribe(response => {
-  //       console.log('encrypt', response);
-  //       return this.outputText = response;
-  //     }, err => console.log(err));
-  // }
-
-  // decryptText() {
-  //   this.requestService
-  //     .decryptText(JSON.stringify(this.inputText))
-  //     .subscribe(response => {
-  //       console.log('decrypt', response);
-  //       return this.outputText = response;
-  //     }, err => console.log(err));
-  // }
-
 }
