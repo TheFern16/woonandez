@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const appData = require('./data/apps');
+const factData = require('./data/facts');
 
 // helper functions
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
@@ -24,6 +25,10 @@ app.post('/api/oxfordComma', (req, res) => {
 
 app.get('/api/apps', (req, res) => {
   res.json(appData);
+});
+
+app.get('/api/facts', (req, res) => {
+  res.json(factData);
 })
 
 app.get('*', (req, res) => {
