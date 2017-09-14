@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const appData = require('./data/apps');
 const factData = require('./data/facts');
+const funData = require('./data/facts');
 
 // helper functions
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
@@ -29,6 +30,10 @@ app.get('/api/apps', (req, res) => {
 
 app.get('/api/facts', (req, res) => {
   res.json(factData);
+});
+
+app.get('/api/fun', (req, res) => {
+  res.json(funData);
 })
 
 app.get('*', (req, res) => {
