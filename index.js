@@ -26,7 +26,7 @@ app.post('/api/oxfordComma', (req, res) => {
 });
 
 app.get('/api/apps', (req, res) => {
-  res.send(appData);
+  res.send(appData.apps);
 });
 
 app.get('/api/facts', (req, res) => {
@@ -34,7 +34,7 @@ app.get('/api/facts', (req, res) => {
 });
 
 app.get('/api/fun', (req, res) => {
-  res.send(funData);
+  res.send(funData.fun);
 });
 
 app.get('/api/skills', (req, res) => {

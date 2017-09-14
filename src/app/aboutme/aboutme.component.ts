@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService, FactService, RequestService } from '../services/';
+// import { SkillsService, FactService, RequestService } from '../services/';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -13,17 +13,12 @@ export class AboutmeComponent implements OnInit {
   showModal = false;
 
   constructor(
-    private skillsService: SkillsService,
-    private factsService: FactService,
-    private requestService: RequestService,
+    // private skillsService: SkillsService,
+    // private factsService: FactService,
+    // private requestService: RequestService,
     private http: HttpClient) {}
 
   ngOnInit() {
-    // this.requestService.fetchSkills()
-    //   .subscribe(data => {
-    //     // console.log(data);
-    //     this.skills = data;
-    //   });
     this.http.get('/api/skills')
       .subscribe(data => {
         this.skills = data;
@@ -33,14 +28,6 @@ export class AboutmeComponent implements OnInit {
       .subscribe(data => {
         this.facts = data;
       });
-
-    // this.requestService.fetchFacts()
-    //   .subscribe(data => {
-    //     console.log(data);
-    //     this.facts = data
-    //   });
-      // this.skills = this.skillsService.skills;
-      // this.facts = this.factsService.facts;
   }
 
   getStyle() {
