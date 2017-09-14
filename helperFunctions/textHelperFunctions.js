@@ -1,5 +1,3 @@
-const cipher = require('../hidden/config');
-
 const addOxfordComma = (text) => {
   return new Promise((resolve, reject) => {
     if (text.replace(/( and)/gi, ", and")) {

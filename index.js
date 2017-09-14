@@ -1,6 +1,7 @@
 // server middleware
 const express = require('express');
 const bodyParser = require('body-parser');
+const appData = require('./data/apps');
 
 // helper functions
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
@@ -20,6 +21,10 @@ app.post('/api/oxfordComma', (req, res) => {
       res.json(response);
     });
 });
+
+app.get('/api/apps', (req, res) => {
+  res.json(appData);
+})
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
