@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const appData = require('./data/apps');
 const factData = require('./data/facts');
 const funData = require('./data/facts');
+const skillsData = require('./data/skills');
 
 // helper functions
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
@@ -34,7 +35,11 @@ app.get('/api/facts', (req, res) => {
 
 app.get('/api/fun', (req, res) => {
   res.json(funData);
-})
+});
+
+app.get('/api/skills', (req, res) => {
+  res.json(skillsData);
+});
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
