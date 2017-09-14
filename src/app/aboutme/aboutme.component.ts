@@ -13,13 +13,19 @@ export class AboutmeComponent implements OnInit {
 
   constructor(
     private skillsService: SkillsService,
-    private factsService: FactService) {}
+    private factsService: FactService,
+    private requestService: RequestService) {}
 
   ngOnInit() {
+    this.requestService.fetchSkills()
+      .subscribe(data => {
+        this.skills = this.skillsService.skills;
+      });
 
-
-    this.skills = this.skillsService.skills;
-    this.facts = this.factsService.facts;
+    this.requestService.fetchFacts()
+      .subscribe(data => {
+        this.facts = this.factsService.facts;
+      });
   }
 
   getStyle() {
