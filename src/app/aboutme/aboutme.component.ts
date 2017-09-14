@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillsService, FactService, RequestService } from '../services/';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,25 +8,34 @@ import { SkillsService, FactService, RequestService } from '../services/';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  skills = [];
-  facts = [];
+  skills: any = [];
+  facts: any = [];
   showModal = false;
 
   constructor(
     private skillsService: SkillsService,
     private factsService: FactService,
-    private requestService: RequestService) {}
+    private requestService: RequestService,
+    private http: HttpClient) {}
 
   ngOnInit() {
     this.requestService.fetchSkills()
       .subscribe(data => {
-        this.skills = this.skillsService.skills;
+        // console.log(data);
+        this.skills = data;
       });
-
+    // this.http.get('/api/skills')
+    //   .subscribe(data => {
+    //     console.log(data);
+    //     this.skills = data;
+    //   });
     this.requestService.fetchFacts()
       .subscribe(data => {
-        this.facts = this.factsService.facts;
+        console.log(data);
+        this.facts = data
       });
+      // this.skills = this.skillsService.skills;
+      // this.facts = this.factsService.facts;
   }
 
   getStyle() {

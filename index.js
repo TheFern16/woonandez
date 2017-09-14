@@ -26,19 +26,19 @@ app.post('/api/oxfordComma', (req, res) => {
 });
 
 app.get('/api/apps', (req, res) => {
-  res.json(appData);
+  res.send(appData);
 });
 
 app.get('/api/facts', (req, res) => {
-  res.json(factData);
+  res.send(factData.facts);
 });
 
 app.get('/api/fun', (req, res) => {
-  res.json(funData);
+  res.send(funData);
 });
 
 app.get('/api/skills', (req, res) => {
-  res.json(skillsData);
+  res.send(skillsData.skills);
 });
 
 app.get('*', (req, res) => {

@@ -107,7 +107,8 @@ const skills = [
     src: "../../assets/reactToolbox.png",
     desc: "react-toolbox"
   }
-];
+]
+
 
 module.exports = {
   skills
