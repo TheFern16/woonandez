@@ -14,7 +14,8 @@ import { TechComponent } from './aboutme/tech/tech.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { StateService, SkillsService, FunService, FactService, RequestService } from './services';
+import { RequestService } from './services';
+
 import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
 
@@ -38,7 +39,7 @@ import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
     FormsModule
   ],
   exports: [],
-  providers: [ StateService, SkillsService, FunService, FactService, RequestService ],
+  providers: [ RequestService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
