@@ -21,22 +21,6 @@ app.post('/api/oxfordComma', (req, res) => {
     });
 });
 
-app.post('/api/encrypt', (req, res) => {
-  TextHelpers.encryptText(req.body.text)
-    .then((response) => {
-      console.log(response, typeof response);
-      res.send(response);
-    });
-})
-
-app.post('/api/decrypt', (req, res) => {
-  TextHelpers.decryptText(req.body.text)
-    .then((response) => {
-      console.log(response, 'decrypt', typeof response);
-      res.send(response);
-    });
-})
-
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
 });
