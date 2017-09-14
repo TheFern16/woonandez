@@ -19,21 +19,26 @@ export class AboutmeComponent implements OnInit {
     private http: HttpClient) {}
 
   ngOnInit() {
-    this.requestService.fetchSkills()
-      .subscribe(data => {
-        // console.log(data);
-        this.skills = data;
-      });
-    // this.http.get('/api/skills')
+    // this.requestService.fetchSkills()
     //   .subscribe(data => {
-    //     console.log(data);
+    //     // console.log(data);
     //     this.skills = data;
     //   });
-    this.requestService.fetchFacts()
+    this.http.get('/api/skills')
       .subscribe(data => {
-        console.log(data);
-        this.facts = data
+        this.skills = data;
       });
+
+    this.http.get('/api/facts')
+      .subscribe(data => {
+        this.facts = data;
+      });
+
+    // this.requestService.fetchFacts()
+    //   .subscribe(data => {
+    //     console.log(data);
+    //     this.facts = data
+    //   });
       // this.skills = this.skillsService.skills;
       // this.facts = this.factsService.facts;
   }

@@ -9,13 +9,4 @@ export class RequestService {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
     return this.http.post('/api/oxfordComma', { text }, { headers });
   }
-
-  fetchSkills() {
-    return this.http.get('/api/skills');
-  }
-
-  fetchFacts() {
-    return this.http.get('/api/facts');
-  }
-
 }
