@@ -18,6 +18,7 @@ import { RequestService } from './services';
 
 import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
+import { ModalComponent } from './aboutme/modal/modal.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
     PhotoComponent,
     TechComponent,
     RandomfactComponent,
-    FunWithTextComponent
+    FunWithTextComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
