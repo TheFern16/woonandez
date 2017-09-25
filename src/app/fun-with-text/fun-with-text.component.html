@@ -2,15 +2,15 @@
   <h1 class="display-3">Fun With Text!</h1>
   <p class="lead">Oxford comma your text!</p>
   <hr class="my-4">
-</div>
-
-<form>
-  <div class="form-group">
     <div class="btn-group btn-group-lg" role="group" aria-label="...">
        <button (click)="setText($event)" type="button" class="btn btn-primary">Add Oxford Commas!</button>
        <button (click)="setText($event)" disabled type="button" class="btn btn-secondary">Coming Soon</button>
        <button (click)="setText($event)" disabled type="button" class="btn btn-secondary">Coming Soon</button>
     </div>
+</div>
+
+<form>
+  <div class="form-group">
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Input Text</label>
       <textarea [(ngModel)]="inputText" name="inputText" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
