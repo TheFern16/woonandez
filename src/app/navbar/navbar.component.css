@@ -1,3 +1,12 @@
+nav a:nth-child(1) {
+  background: #f5f5f5;
+  color: #0f1626;
+}
+
+nav a:nth-child(2) {
+  background: #0F1626;
+}
+
 a {
   transition: .5s;
   transform: scale(.9);
