@@ -1,10 +1,6 @@
-.card {
-  transition: .5s;
-  transform: scale(.9);
-}
-
-.card:hover {
-  transform: scale(1);
+div {
+  background-color: #ab987a;
+  color: #f5f5f5;
 }
 
 a {
@@ -14,3 +10,13 @@ a {
 a:hover {
   transform: scale(1);
 }
+
+.card {
+  transition: .5s;
+  transform: scale(.9);
+}
+
+.card:hover {
+  transform: scale(1);
+}
+
