@@ -22,7 +22,9 @@ h1 {
   overflow: auto;
   background-color: #ffffff;
   opacity: 75%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
+  animation-duration: 1s;
+  animation-name: slideup;
 }
 
 .card {
@@ -54,6 +56,29 @@ h1 {
   }
   100% {
     margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+  25% {
+    margin-bottom: 75%;
+    width: 200%;
+  }
+  50% {
+    margin-bottom: 50%;
+    width: 150%;
+  }
+  75% {
+    margin-bottom: 25%;
+    width: 125%;
+  }
+  100% {
+    margin-bottom: 0%;
     width: 100%;
   }
 }
