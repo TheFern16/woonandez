@@ -1,7 +1,7 @@
 const skills = [
   {
     href: "https://angular.io/",
-    src: "../../assets/angular.svg",
+    src: "../../assets/angular.png",
     desc: 'Angular'
   },
   {
@@ -41,7 +41,7 @@ const skills = [
   },
   {
     href: "http://getbootstrap.com/",
-    src: "../../assets/bootstrap.svg",
+    src: "../../assets/bootstrap.png",
     desc: 'Bootstrap'
   },
   {
@@ -51,7 +51,7 @@ const skills = [
   },
   {
     href: "https://auth0.com/",
-    src: "../../assets/auth.svg",
+    src: "../../assets/auth.png",
     desc: 'AuthO'
   },
   {
@@ -106,6 +106,11 @@ const skills = [
     href: "http://react-toolbox.com/#/",
     src: "../../assets/reactToolbox.png",
     desc: "react-toolbox"
+  },
+  {
+    href: "https://github.com/reactjs/react-redux",
+    src: "../../assets/react_redux.jpg",
+    desc: "react-redux"
   }
 ]
 
