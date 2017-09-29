@@ -93,11 +93,13 @@ const skills = [
     href: "http://redux.js.org/",
     src: "../../assets/redux.png",
     desc: "redux"
-  }, {
+  },
+  {
     href: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3",
     src: "../../assets/css.svg",
     desc: "css3"
-  }, {
+  },
+  {
     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     src: "../../assets/html.svg",
     desc: "html5"
@@ -111,6 +113,11 @@ const skills = [
     href: "https://github.com/reactjs/react-redux",
     src: "../../assets/react_redux.jpg",
     desc: "react-redux"
+  },
+  {
+    href: "https://github.com/ReactTraining/react-router",
+    src: "../../assets/react_router.jpg",
+    desc: "react-router"
   }
 ]
 
