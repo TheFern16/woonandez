@@ -77,6 +77,13 @@ const apps = [
     desc: 'Catch of the Day is a starter project that I forked from WesBos.  Here is a shot a the landing page.  This landing name is uniquely generated.  Once the user clicks on Visit Store it will then route the to the home page.  This application uses react-router v4 to move from this landing page to the home page.'
   },
   {
+    appName: 'Catch of the Day',
+    thumbnail: 'https://preview.ibb.co/cMN4ow/Screen_Shot_2017_10_02_at_2_58_01_PM.png',
+    full: 'https://ibb.co/idiYgG',
+    github: full: 'https://ibb.co/mobfTw',
+    desc: 'This is the Catch of the Day home page.  This is an ordering system.  Users can click on add to order.  Those fish will be added to the order, and ultimately have that order calculated in real time.  Data is also persisted.  The Catch of the Day application uses Firebase for data persistence.  All data can be updated, and/or modified in real time.'
+  },
+  {
     appName: 'Enigma',
     thumbnail: 'https://preview.ibb.co/eESKrv/Screen_Shot_2017_09_05_at_10_25_46_AM.png',
     full: 'https://ibb.co/gn3sBv',
