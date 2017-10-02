@@ -118,6 +118,11 @@ const skills = [
     href: "https://github.com/ReactTraining/react-router",
     src: "../../assets/react_router.jpg",
     desc: "react-router"
+  },
+  {
+    href: "https://babeljs.io/",
+    src: "../../assets/babel.png",
+    desc: "babel"
   }
 ]
 
