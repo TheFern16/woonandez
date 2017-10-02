@@ -126,7 +126,7 @@ const skills = [
   },
   {
     href: "https://webpack.github.io/",
-    src: "../../assets/babel.png",
+    src: "../../assets/webpack.png",
     desc: "webpack"
   }
 ]

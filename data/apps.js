@@ -56,6 +56,13 @@ const apps = [
     desc: 'Here is the landing page for It\'s Cut Time.  Users are able to see all of the local stylists which are servicing around them (represented by a pair of scissors).  They can directly message those stylists.  Once the user has decided to use their services; an official notification is sent to the stylist.  Allowing the stylist to either accept, or decline the cut.  The payment is done through the stripe API.'
   },
   {
+    appName: 'Mattstagram',
+    thumbnail: 'https://preview.ibb.co/kevFTw/Screen_Shot_2017_10_02_at_2_35_37_PM.png',
+    full: 'https://ibb.co/mKEnab',
+    github: 'https://github.com/woonandez/reduxstagram',
+    desc: 'Mattstagram is a starter project that I forked from WesBos.  It is an application that mimics the popular web, and mobile app; Instagram.  Mattstagram uses redux for state management, and React for the view.  This is a fun project because it incorporated react-router v4, and react-redux.'
+  },
+  {
     appName: 'Enigma',
     thumbnail: 'https://preview.ibb.co/eESKrv/Screen_Shot_2017_09_05_at_10_25_46_AM.png',
     full: 'https://ibb.co/gn3sBv',
