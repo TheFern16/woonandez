@@ -80,7 +80,7 @@ const apps = [
     appName: 'Catch of the Day',
     thumbnail: 'https://preview.ibb.co/cMN4ow/Screen_Shot_2017_10_02_at_2_58_01_PM.png',
     full: 'https://ibb.co/idiYgG',
-    github: 'https://ibb.co/mobfTw',
+    github: 'https://github.com/woonandez/cotd',
     desc: 'This is the Catch of the Day home page.  This is an ordering system.  Users can click on add to order.  Those fish will be added to the order, and ultimately have that order calculated in real time.  Data is also persisted.  The Catch of the Day application uses Firebase for data persistence.  All data can be updated, and/or modified in real time.'
   },
   {
