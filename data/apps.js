@@ -70,6 +70,13 @@ const apps = [
     desc: 'Here is a great shot of an individual photo.  Once the user clicks on a photo they are brought to the photo view.  This allows the user to add comments to the photo, or even like it.  The photos, and comments are updated in real time.  The store is updated in real time using react-redux.'
   },
   {
+    appName: 'Catch of the Day',
+    thumbnail: 'https://preview.ibb.co/d5duow/Screen_Shot_2017_10_02_at_2_57_47_PM.png',
+    full: 'https://ibb.co/mobfTw',
+    github: 'https://github.com/woonandez/cotd',
+    desc: 'Catch of the Day is a starter project that I forked from WesBos.  Here is a shot a the landing page.  This landing name is uniquely generated.  Once the user clicks on Visit Store it will then route the to the home page.  This application uses react-router v4 to move from this landing page to the home page.'
+  },
+  {
     appName: 'Enigma',
     thumbnail: 'https://preview.ibb.co/eESKrv/Screen_Shot_2017_09_05_at_10_25_46_AM.png',
     full: 'https://ibb.co/gn3sBv',
