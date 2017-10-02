@@ -63,6 +63,13 @@ const apps = [
     desc: 'Mattstagram is a starter project that I forked from WesBos.  It is an application that mimics the popular web, and mobile app; Instagram.  Mattstagram uses redux for state management, and React for the view.  This is a fun project because it incorporated react-router v4, and react-redux.'
   },
   {
+    appName: 'Mattstagram',
+    thumbnail: 'https://preview.ibb.co/eii28w/Screen_Shot_2017_10_02_at_2_35_56_PM.png',
+    full: 'https://ibb.co/dSH7ab',
+    github: 'https://github.com/woonandez/reduxstagram',
+    desc: 'Here is a great shot of an individual photo.  Once the user clicks on a photo they are brought to the photo view.  This allows the user to add comments to the photo, or even like it.  The photos, and comments are updated in real time.  The store is updated in real time using react-redux.'
+  },
+  {
     appName: 'Enigma',
     thumbnail: 'https://preview.ibb.co/eESKrv/Screen_Shot_2017_09_05_at_10_25_46_AM.png',
     full: 'https://ibb.co/gn3sBv',
