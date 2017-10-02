@@ -123,6 +123,11 @@ const skills = [
     href: "https://babeljs.io/",
     src: "../../assets/babel.png",
     desc: "babel"
+  },
+  {
+    href: "https://webpack.github.io/",
+    src: "../../assets/babel.png",
+    desc: "webpack"
   }
 ]
 
