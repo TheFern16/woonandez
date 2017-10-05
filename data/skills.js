@@ -128,6 +128,11 @@ const skills = [
     href: "https://webpack.github.io/",
     src: "../../assets/webpack.png",
     desc: "webpack"
+  },
+  {
+    href: "https://facebook.github.io/jest/",
+    src: "../../assets/jest.png",
+    desc: "jest"
   }
 ]
 
