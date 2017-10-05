@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AboutmeComponent implements OnInit {
   skills: any = [];
   facts: any = [];
-  showModal = false;
+  showModal: boolean = false;
 
   constructor(private http: HttpClient) {}
 

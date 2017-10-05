@@ -7,6 +7,15 @@
   <a class="btn btn-primary btn-lg" href="https://mattfernandezblog.wordpress.com" role="button" target="blank">My Blog</a>
 </div>
 
-<div class="embed-responsive embed-responsive-1by1">
-  <iframe class="embed-responsive-item" src="https://mattfernandezblog.wordpress.com/"></iframe>
+
+<div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
+  <div class="modal-dialog modal-lg miniWrapper">
+    <div class="modal-content">
+      <div class="embed-responsive embed-responsive-1by1">
+        <iframe class="embed-responsive-item" src="https://mattfernandezblog.wordpress.com/"></iframe>
+      </div>
+    </div>
+  </div>
 </div>
+
+
