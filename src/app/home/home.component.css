@@ -7,7 +7,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-h1 {
+h2 {
   animation-duration: 1.5s;
   animation-name: slidein;
 }
