@@ -88,9 +88,17 @@ const apps = [
     thumbnail: 'https://preview.ibb.co/hdD51G/Screen_Shot_2017_10_09_at_3_34_59_PM.png',
     full: 'https://ibb.co/mWRgab',
     github: 'https://github.com/woonandez/rrv4',
-    desc: 'This was a starter repo that I cloned from the Front End Masters.  I really enjoyed working through this course.  It uses brand new technologies like Flow, Jest, and Typescript.  It uses React Router v4 for page management, and react-redux v3 for state management.  The React, and Redux portions of this application are typed.'
+    desc: 'This was a starter repo that I cloned from the Front End Masters.  I really enjoyed working through this course.  It uses brand new technologies like Flow, Jest, and Typescript.  It uses React Router v4 for page management, and react-redux v3 for state management.  The React components, Redux action creators, and reducers are all heavily typed.'
+  },
+  {
+    appName: 'Matt\'s Video Service',
+    thumbnail: 'https://preview.ibb.co/ccXMab/Screen_Shot_2017_10_09_at_4_30_54_PM.png',
+    full: 'ttps://ibb.co/h2cnFb',
+    github: 'https://github.com/woonandez/rrv4',
+    desc: 'Here is a sample shot of the popular NETFLIX show Narcos.  Once the user interacts with the search bar, the page begins to reduce what is shown.  The video that is clicked uses a regex like system to search through the search term.  The input box for the search term fires off an action, which is dispactched, and then reduced.  Once it is reduced the state is updated.  The video that is returned from the reducer is then passed into the child card like component.'
   }
 ];
+
 
 module.exports = {
   apps
