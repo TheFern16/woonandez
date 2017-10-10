@@ -1,6 +1,7 @@
 a {
   transform: scale(1);
   margin: .5em;
+  color: #ffffff;
 }
 
 a:hover {
@@ -13,9 +14,7 @@ h2 {
 }
 
 .modalWrapper {
-  background-color: #ffffff;
-  opacity: 75%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
 }
 
 

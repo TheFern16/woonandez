@@ -133,6 +133,11 @@ const skills = [
     href: "https://facebook.github.io/jest/",
     src: "../../assets/jest.png",
     desc: "jest"
+  },
+  {
+    href: "https://www.typescriptlang.org/docs/home.html",
+    src: "../../assets/typeScript.png",
+    desc: "TypeScript"
   }
 ]
 
