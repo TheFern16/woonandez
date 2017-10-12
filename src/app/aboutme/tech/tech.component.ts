@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { skill } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-tech',
@@ -6,11 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tech.component.css']
 })
 export class TechComponent implements OnInit {
-  @Input('skill') skill: { href: string, src: string, desc: string };
+  @Input('skill') skill: skill;
 
   constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
