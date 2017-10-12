@@ -25,6 +25,8 @@ export class FunWithTextComponent implements OnInit {
       this.addOxfordCommas();
     } else if (this.invokeFunction === 'UpperCase!') {
       this.upperCaseText();
+    } else if (this.invokeFunction === 'LowerCase!') {
+      this.lowerCaseText();
     }
   }
 
@@ -39,6 +41,14 @@ export class FunWithTextComponent implements OnInit {
   upperCaseText() {
     this.requestService
       .upperCaseText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        return this.outputText = response;
+      }, err => console.log(err));
+  }
+
+  lowerCaseText() {
+    this.requestService
+      .lowerCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
         return this.outputText = response;
       }, err => console.log(err));
