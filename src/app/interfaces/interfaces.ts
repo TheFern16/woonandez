@@ -8,3 +8,11 @@ export interface skill {
   src: string,
   desc: string
 }
+
+export interface photo {
+  appName: string,
+  thumbnail: string,
+  full: string,
+  github: string,
+  desc: string
+}
