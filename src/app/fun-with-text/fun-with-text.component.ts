@@ -23,6 +23,8 @@ export class FunWithTextComponent implements OnInit {
   handleRequest() {
     if (this.invokeFunction === 'Add Oxford Commas!') {
       this.addOxfordCommas();
+    } else if (this.invokeFunction === 'UpperCase!') {
+      this.upperCaseText();
     }
   }
 
