@@ -10,6 +10,16 @@ const addOxfordComma = (text) => {
   });
 }
 
+const upperCase = (text) => {
+  return new Promise((resolve, reject) => {
+    if (text) {
+      resolve(text.toUpperCase())
+    } else {
+      reject(Error('woopsie'));
+    }
+  });
+}
+
 module.exports = {
   addOxfordComma
 }
