@@ -21,5 +21,6 @@ const upperCase = (text) => {
 }
 
 module.exports = {
-  addOxfordComma
+  addOxfordComma,
+  upperCase
 }

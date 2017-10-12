@@ -25,6 +25,13 @@ app.post('/api/oxfordComma', (req, res) => {
     });
 });
 
+app.post('/api/upperCase', (req, res) => {
+  TextHelpers.upperCase(req.body.text)
+    .then((response) => {
+      res.json(response);
+    });
+});
+
 app.get('/api/apps', (req, res) => {
   res.send(appData.apps);
 });
