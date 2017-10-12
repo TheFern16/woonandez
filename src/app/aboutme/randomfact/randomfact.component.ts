@@ -8,7 +8,7 @@ import { fact } from '../../interfaces/interfaces';
 export class RandomfactComponent implements OnInit {
   @Input('fact') fact: fact;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
 

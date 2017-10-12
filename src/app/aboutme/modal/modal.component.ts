@@ -9,8 +9,7 @@ import { fact } from '../../interfaces/interfaces';
 export class ModalComponent implements OnInit {
   @Input('facts') facts: Array<fact>;
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit() {}
 
