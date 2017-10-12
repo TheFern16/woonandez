@@ -13,7 +13,17 @@ const addOxfordComma = (text) => {
 const upperCase = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
-      resolve(text.toUpperCase())
+      resolve(text.toUpperCase());
+    } else {
+      reject(Error('woopsie'));
+    }
+  });
+}
+
+const lowerCase = (text) => {
+  return new Promise((resolve, reject) => {
+    if (text) {
+      resolve(text.toLowerCase());
     } else {
       reject(Error('woopsie'));
     }
@@ -22,5 +32,6 @@ const upperCase = (text) => {
 
 module.exports = {
   addOxfordComma,
-  upperCase
+  upperCase,
+  lowerCase
 }
