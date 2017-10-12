@@ -12,6 +12,11 @@
 </div>
 
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
+  <app-modal [style.display]="getStyle()" (click)="toggleModal($event)"></app-modal>
+</div>
+
+
+<!-- <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
   <div class="modal-dialog modal-lg miniWrapper" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -39,3 +44,4 @@
 
 
 
+ -->
