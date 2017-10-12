@@ -34,4 +34,12 @@ export class FunWithTextComponent implements OnInit {
         }, err => console.log(err));
   }
 
+  upperCaseText() {
+    this.requestService
+      .upperCaseText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        return this.outputText = response;
+      }, err => console.log(err));
+  }
+
 }
