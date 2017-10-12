@@ -9,4 +9,10 @@ export class RequestService {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
     return this.http.post('/api/oxfordComma', { text }, { headers });
   }
+
+  upperCaseText(text: string) {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post('/api/upperCase', { text }, { headers });
+  }
+
 }
