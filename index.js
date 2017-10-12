@@ -47,5 +47,5 @@ app.get('*', (req, res) => {
 
 // listening to port 1337
 app.listen(port, () => {
-  console.log(`I am listening to port #${port}`)
+  console.log(`I am listening to port #${port}`);
 });
