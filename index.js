@@ -32,6 +32,13 @@ app.post('/api/upperCase', (req, res) => {
     });
 });
 
+app.post('/api/lowerCase', (req, res) => {
+  TextHelpers.lowerCase(req.body.text)
+    .then((response) => {
+      res.json(response);
+    });
+})
+
 app.get('/api/apps', (req, res) => {
   res.send(appData.apps);
 });
