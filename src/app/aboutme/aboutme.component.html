@@ -12,7 +12,9 @@
 </div>
 
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
-  <app-modal [facts]="facts"></app-modal>
+  <div class="modal-dialog modal-lg miniWrapper" role="document">
+    <app-modal [facts]="facts"></app-modal>
+  </div>
 </div>
 
 

@@ -6,13 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  @Input('facts') facts: any;
+  @Input('facts') facts: [];
 
   constructor() {
   }
 
-  ngOnInit() {
-    console.log(this.facts);
-  }
+  ngOnInit() {}
 
 }
