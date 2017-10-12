@@ -15,4 +15,9 @@ export class RequestService {
     return this.http.post('/api/upperCase', { text }, { headers });
   }
 
+  lowerCaseText(text: string) {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post('/api/lowerCase', { text }, { headers });
+  }
+
 }
