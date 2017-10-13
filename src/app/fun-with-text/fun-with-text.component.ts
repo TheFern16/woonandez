@@ -60,7 +60,7 @@ export class FunWithTextComponent implements OnInit {
     this.requestService
       .camelCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
-        return this.outputText = response;
+        return this.outputText = response.slice(1, response.length - 1);
       }, err => console.log(err));
   }
 

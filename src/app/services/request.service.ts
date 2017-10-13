@@ -22,7 +22,7 @@ export class RequestService {
 
   camelCaseText(text: string) {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post('/api/camelCase', { text }, { headers });
+    return this.http.post('/api/camelCase', { text }, { headers, responseType: 'text' });
   }
 
 }

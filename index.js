@@ -1,12 +1,15 @@
 // server middleware
 const express = require('express');
 const bodyParser = require('body-parser');
+
+// data
 const appData = require('./data/apps');
 const factData = require('./data/facts');
 const funData = require('./data/facts');
 const skillsData = require('./data/skills');
 
-// helper functions
+
+// helper
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
 
 // server

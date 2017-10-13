@@ -30,11 +30,27 @@ const lowerCase = (text) => {
   });
 }
 
+const createString = (text) => {
+  let strip = text.replace(/[^a-z ]/gi, '')
+  let first = strip.split(' ')[0].toLowerCase();
+  let second = strip
+    .toLowerCase()
+    .split(' ')
+    .slice(1)
+    .map(val => val[0].toUpperCase() + val.slice(1))
+    .join('');
+  return first.concat(second);
+}
+
 const camelCase = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
-      let first = text.split(' ')[0].toLowerCase();
-      let second = text.toLowerCase().split(' ').slice(1)
+      let strip = text.replace(/[^a-z ]/gi, '')
+      let first = strip.split(' ')[0].toLowerCase();
+      let second = strip
+        .toLowerCase()
+        .split(' ')
+        .slice(1)
         .map(val => val[0].toUpperCase() + val.slice(1))
         .join('');
       resolve(first.concat(second));
