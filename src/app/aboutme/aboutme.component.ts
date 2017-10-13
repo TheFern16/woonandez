@@ -23,6 +23,7 @@ export class AboutmeComponent implements OnInit {
       .subscribe(data => {
         this.facts = data;
       });
+
   }
 
   getStyle() {

@@ -25,4 +25,14 @@ export class RequestService {
     return this.http.post('/api/camelCase', { text }, { headers, responseType: 'text' });
   }
 
+  gatherSkills() {
+    const headers = new HttpHeaders.set('Content-Type', 'application/json');
+    return this.http.get('/api/skills');
+  }
+
+  gatherFacts() {
+    const headers = new HttpHeaders.set('Content-Type', 'application/json');
+    return this.http.get('/api/facts');
+  }
+
 }
