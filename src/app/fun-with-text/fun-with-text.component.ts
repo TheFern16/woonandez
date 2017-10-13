@@ -23,10 +23,12 @@ export class FunWithTextComponent implements OnInit {
   handleRequest() {
     if (this.invokeFunction === 'Add Oxford Commas!') {
       this.addOxfordCommas();
-    } else if (this.invokeFunction === 'UpperCase!') {
+    } else if (this.invokeFunction === 'UPPERCASE!') {
       this.upperCaseText();
-    } else if (this.invokeFunction === 'LowerCase!') {
+    } else if (this.invokeFunction === 'lowercase') {
       this.lowerCaseText();
+    } else if (this.invokeFunction === 'camelCase!') {
+
     }
   }
 
