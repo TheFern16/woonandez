@@ -11,7 +11,7 @@ export class FunWithTextComponent implements OnInit {
   outputText: any = 'Output will go here.';
   invokeFunction: any = 'Add Oxford Commas!';
 
-  constructor(private requestService: RequestService ) {}
+  constructor(private requestService: RequestService) {}
 
   ngOnInit() {}
 

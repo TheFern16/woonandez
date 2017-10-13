@@ -8,7 +8,6 @@ const factData = require('./data/facts');
 const funData = require('./data/facts');
 const skillsData = require('./data/skills');
 
-
 // helper
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
 
@@ -49,6 +48,8 @@ app.post('/api/camelCase', (req, res) => {
     });
 });
 
+
+// data routes
 app.get('/api/apps', (req, res) => {
   res.send(appData.apps);
 });
