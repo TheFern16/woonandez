@@ -1,9 +1,0 @@
-a {
-  transition: .5s;
-  transform: scale(.9);
-}
-
-a:hover {
-  color: red;
-  transform: scale(1);
-}
