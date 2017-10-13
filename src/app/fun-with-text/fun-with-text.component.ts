@@ -9,7 +9,7 @@ import { RequestService } from '../services/request.service';
 })
 export class FunWithTextComponent implements OnInit {
   inputText: any = '';
-  outputText: any = '';
+  outputText: any = 'Output Text';
   invokeFunction: any = 'Add Oxford Commas!';
 
   constructor(private requestService: RequestService ) {}
@@ -51,6 +51,14 @@ export class FunWithTextComponent implements OnInit {
   lowerCaseText() {
     this.requestService
       .lowerCaseText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        return this.outputText = response;
+      }, err => console.log(err));
+  }
+
+  camelCaseText() {
+    this.requestService
+      .camelCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
         return this.outputText = response;
       }, err => console.log(err));
