@@ -25,10 +25,10 @@ export class FunWithTextComponent implements OnInit {
       this.addOxfordCommas();
     } else if (this.invokeFunction === 'UPPERCASE!') {
       this.upperCaseText();
-    } else if (this.invokeFunction === 'lowercase') {
+    } else if (this.invokeFunction === 'lowercase!') {
       this.lowerCaseText();
     } else if (this.invokeFunction === 'camelCase!') {
-
+      this.camelCaseText();
     }
   }
 

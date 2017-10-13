@@ -33,7 +33,7 @@ const lowerCase = (text) => {
 const camelCase = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
-      let first = text.split(' ')[0];
+      let first = text.split(' ')[0].toLowerCase();
       let second = text.toLowerCase().split(' ').slice(1)
         .map(val => val[0].toUpperCase() + val.slice(1))
         .join('');
