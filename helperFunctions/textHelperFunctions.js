@@ -34,14 +34,14 @@ const camelCase = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
       let first = text.split(' ')[0];
-      let second = str.toLowerCase().split(' ').slice(1)
+      let second = text.toLowerCase().split(' ').slice(1)
         .map(val => val[0].toUpperCase() + val.slice(1))
         .join('');
       resolve(first.concat(second));
     } else {
       reject(Error('incorrect input'))
     }
-  }
+  });
 }
 
 module.exports = {
