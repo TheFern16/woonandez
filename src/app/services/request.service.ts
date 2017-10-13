@@ -26,12 +26,10 @@ export class RequestService {
   }
 
   gatherSkills() {
-    const headers = new HttpHeaders.set('Content-Type', 'application/json');
     return this.http.get('/api/skills');
   }
 
   gatherFacts() {
-    const headers = new HttpHeaders.set('Content-Type', 'application/json');
     return this.http.get('/api/facts');
   }
 

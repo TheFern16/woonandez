@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { RequestService } from '../services/request.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -11,19 +11,18 @@ export class AboutmeComponent implements OnInit {
   facts: any = [];
   showModal: boolean = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private requestService: RequestService) {}
 
   ngOnInit() {
-    this.http.get('/api/skills')
-      .subscribe(data => {
-        this.skills = data;
-      });
 
-    this.http.get('/api/facts')
+    this.requestService.gatherFacts()
       .subscribe(data => {
         this.facts = data;
       });
-
+    this.requestService.gatherSkills()
+      .subscribe(data => {
+        this.skills = data;
+      });
   }
 
   getStyle() {

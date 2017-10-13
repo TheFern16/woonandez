@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import { RequestService } from '../services/request.service';
 
 @Component({
@@ -33,32 +32,28 @@ export class FunWithTextComponent implements OnInit {
   }
 
   addOxfordCommas() {
-    this.requestService
-      .addOxfordComma(JSON.stringify(this.inputText))
+    this.requestService.addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
           return this.outputText = response;
         }, err => console.log(err));
   }
 
   upperCaseText() {
-    this.requestService
-      .upperCaseText(JSON.stringify(this.inputText))
+    this.requestService.upperCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
         return this.outputText = response;
       }, err => console.log(err));
   }
 
   lowerCaseText() {
-    this.requestService
-      .lowerCaseText(JSON.stringify(this.inputText))
+    this.requestService.lowerCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
         return this.outputText = response;
       }, err => console.log(err));
   }
 
   camelCaseText() {
-    this.requestService
-      .camelCaseText(JSON.stringify(this.inputText))
+    this.requestService.camelCaseText(JSON.stringify(this.inputText))
       .subscribe(response => {
         return this.outputText = response.slice(1, response.length - 1);
       }, err => console.log(err));
