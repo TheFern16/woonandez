@@ -37,7 +37,9 @@ app.post('/api/lowerCase', (req, res) => {
     .then((response) => {
       res.json(response);
     });
-})
+});
+
+
 
 app.get('/api/apps', (req, res) => {
   res.send(appData.apps);

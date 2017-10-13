@@ -5,7 +5,7 @@ const addOxfordComma = (text) => {
       let addOComma = testDouble.replace(/( and)/gi, ', and');
       resolve(addOComma);
     } else {
-      reject(Error('woopsie'));
+      reject(Error('incorrect input'));
     }
   });
 }
@@ -15,7 +15,7 @@ const upperCase = (text) => {
     if (text) {
       resolve(text.toUpperCase());
     } else {
-      reject(Error('woopsie'));
+      reject(Error('incorrect input'));
     }
   });
 }
@@ -25,9 +25,19 @@ const lowerCase = (text) => {
     if (text) {
       resolve(text.toLowerCase());
     } else {
-      reject(Error('woopsie'));
+      reject(Error('incorrect input'));
     }
   });
+}
+
+const camelCase = (text) => {
+  return new Promise((resolve, reject) => {
+    if (text) {
+
+    } else {
+      reject(Error('incorrect input'))
+    }
+  }
 }
 
 module.exports = {
