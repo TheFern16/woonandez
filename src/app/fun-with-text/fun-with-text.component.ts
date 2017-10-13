@@ -8,8 +8,8 @@ import { RequestService } from '../services/request.service';
   styleUrls: ['./fun-with-text.component.css']
 })
 export class FunWithTextComponent implements OnInit {
-  inputText: any = '';
-  outputText: any = 'Output Text';
+  inputText: any = 'Input Text here.';
+  outputText: any = 'Output will go here.';
   invokeFunction: any = 'Add Oxford Commas!';
 
   constructor(private requestService: RequestService ) {}
