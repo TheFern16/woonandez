@@ -39,7 +39,12 @@ app.post('/api/lowerCase', (req, res) => {
     });
 });
 
-
+app.post('/api/camelCase', (req, res) => {
+  TextHelpers.camelCase(req.body.text)
+    .then((response) => {
+      res.json(response);
+    });
+});
 
 app.get('/api/apps', (req, res) => {
   res.send(appData.apps);

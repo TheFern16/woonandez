@@ -47,5 +47,6 @@ const camelCase = (text) => {
 module.exports = {
   addOxfordComma,
   upperCase,
-  lowerCase
+  lowerCase,
+  camelCase
 }
