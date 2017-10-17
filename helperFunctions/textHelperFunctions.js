@@ -83,5 +83,6 @@ module.exports = {
   addOxfordComma,
   upperCase,
   lowerCase,
-  camelCase
+  camelCase,
+  altText
 }
