@@ -60,7 +60,7 @@ const camelCase = (text) => {
   });
 }
 
-const altText = (text) => {
+const altCase = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
       const string = text.toLowerCase();
@@ -84,5 +84,5 @@ module.exports = {
   upperCase,
   lowerCase,
   camelCase,
-  altText
+  altCase
 }

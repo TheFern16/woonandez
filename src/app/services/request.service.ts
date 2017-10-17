@@ -25,6 +25,11 @@ export class RequestService {
     return this.http.post('/api/camelCase', { text }, { headers, responseType: 'text' });
   }
 
+  altCaseText(text: string) {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post('/api/altCase', { text }, { headers, responseType: 'text' });
+  }
+
   gatherSkills() {
     return this.http.get('/api/skills');
   }

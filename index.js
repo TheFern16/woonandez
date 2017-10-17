@@ -48,8 +48,8 @@ app.post('/api/camelCase', (req, res) => {
     });
 });
 
-app.post('/api/altText', (req, res) => {
-  TextHelpers.altText(req.body.text)
+app.post('/api/altCase', (req, res) => {
+  TextHelpers.altCase(req.body.text)
     .then((response) => {
       res.json(response);
     });
