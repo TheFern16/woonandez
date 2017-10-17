@@ -48,6 +48,13 @@ app.post('/api/camelCase', (req, res) => {
     });
 });
 
+app.post('/api/altText', (req, res) => {
+  TextHelpers.altText(req.body.text)
+    .then((response) => {
+      res.json(response);
+    });
+});
+
 
 // data routes
 app.get('/api/apps', (req, res) => {

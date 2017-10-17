@@ -63,7 +63,7 @@ const camelCase = (text) => {
 const altText = (text) => {
   return new Promise((resolve, reject) => {
     if (text) {
-      let string = text.toLowerCase();
+      const string = text.toLowerCase();
       let result = '';
       for (var i = 0; i < string.length; i++) {
         if (i % 2 !== 0) {
@@ -72,10 +72,11 @@ const altText = (text) => {
           result += string[i];
         }
       }
+      resolve(result);
     } else {
       reject(Error('incorrect input'));
     }
-  })
+  });
 }
 
 module.exports = {
