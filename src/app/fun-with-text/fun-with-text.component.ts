@@ -29,7 +29,7 @@ export class FunWithTextComponent implements OnInit {
     } else if (this.invokeFunction === 'camelCase!') {
       this.camelCaseText();
     } else if (this.invokeFunction === 'aLtTeXt!') {
-      this.altText();
+      this.altCaseText();
     }
   }
 
@@ -61,8 +61,11 @@ export class FunWithTextComponent implements OnInit {
       }, err => console.log(err));
   }
 
-  altText() {
-
+  altCaseText() {
+    this.requestService.altCaseText(JSON.stringify(this.inputText))
+      .subscribe(response => {
+        return this.outputText = response;
+      }, err => console.log(err));
   }
 
 }
