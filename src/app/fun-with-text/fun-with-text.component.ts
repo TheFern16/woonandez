@@ -28,6 +28,8 @@ export class FunWithTextComponent implements OnInit {
       this.lowerCaseText();
     } else if (this.invokeFunction === 'camelCase!') {
       this.camelCaseText();
+    } else if (this.invokeFunction === 'aLtTeXt!') {
+      this.altText();
     }
   }
 
@@ -57,6 +59,10 @@ export class FunWithTextComponent implements OnInit {
       .subscribe(response => {
         return this.outputText = response;
       }, err => console.log(err));
+  }
+
+  altText() {
+
   }
 
 }
