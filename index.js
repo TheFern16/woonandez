@@ -17,7 +17,7 @@ const port = process.env.PORT || 1337;
 
 // serve client files
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/dist'));
+// app.use(express.static(__dirname + '/dist'));
 
 // routing
 app.post('/api/oxfordComma', (req, res) => {
@@ -73,9 +73,9 @@ app.get('/api/skills', (req, res) => {
   res.send(skillsData.skills);
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/dist/index.html');
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(__dirname + '/dist/index.html');
+// });
 
 // listening to port 1337
 app.listen(port, () => {

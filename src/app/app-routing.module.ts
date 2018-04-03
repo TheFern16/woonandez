@@ -7,27 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'apps',
-    component: ProjectsComponent
-  },
-  {
-    path: 'aboutme',
-    component: AboutmeComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'funWithText',
-    component: FunWithTextComponent
-  },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  }
+  { path: 'apps', component: ProjectsComponent },
+  { path: 'aboutme', component: AboutmeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'funWithText', component: FunWithTextComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: HomeComponent }
 ]
 
 @NgModule({
