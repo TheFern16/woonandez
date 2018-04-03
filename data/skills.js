@@ -5,11 +5,6 @@ const skills = [
     desc: 'Angular'
   },
   {
-    href: "https://facebook.github.io/react/",
-    src: "../../assets/react.svg",
-    desc: 'ReactJS'
-  },
-  {
     href: "https://nodejs.org/en/",
     src: "../../assets/node.svg",
     desc: 'nodeJS'
@@ -18,6 +13,16 @@ const skills = [
     href: "https://www.mysql.com/",
     src: "../../assets/MySQL.svg",
     desc: 'MySQL'
+  },
+  {
+    href: "https://www.postgresql.org/",
+    src: "../../assets/postgresql.png",
+    desc: "PSQL"
+  },
+  {
+    href: "https://facebook.github.io/react/",
+    src: "../../assets/react.svg",
+    desc: 'ReactJS'
   },
   {
     href: "https://www.mongodb.com/",
