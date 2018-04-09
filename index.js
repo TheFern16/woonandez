@@ -3,15 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const router = require('./router.js');
 
-// data
-const appData = require('./data/apps');
-const factData = require('./data/facts');
-const funData = require('./data/facts');
-const skillsData = require('./data/skills');
-
-// helper
-const TextHelpers = require('./helperFunctions/textHelperFunctions');
-
 // server
 const app = express();
 const port = process.env.PORT || 1337;

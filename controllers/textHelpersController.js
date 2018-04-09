@@ -2,59 +2,39 @@ const textHelpers = require('../services/textHelpersService');
 
 module.exports = {
   altCase: function(req, res) {
-    textHelpers.altCase(req.body.text);
+    textHelpers.altCase(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   },
   camelCase: function(req, res) {
-    textHelpers.camelCase(req.body.text);
+    textHelpers.camelCase(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   },
   createString: function(req, res) {
-    textHelpers.createString(req.body.text);
+    textHelpers.createString(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   },
   lowerCase: function(req, res) {
-    textHelpers.lowerCase(req.body.text);
+    textHelpers.lowerCase(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   },
   oxfordComma: function(req, res) {
-    textHelpers.oxfordComma(req.body.text);
+    textHelpers.oxfordComma(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   },
   upperCase: function(req, res) {
-    textHelpers.upperCase(req.body.text);
+    textHelpers.upperCase(req.body.text)
+      .then((response) => {
+        res.json(response);
+      });
   }
-}
-
-
-
-// fun with text
-// router.post('/oxfordComma', (req, res) => {
-//   TextHelpers.addOxfordComma(req.body.text)
-//     .then((response) => {
-//       res.json(response);
-//     });
-// });
-
-// router.post('/upperCase', (req, res) => {
-//   TextHelpers.upperCase(req.body.text)
-//     .then((response) => {
-//       res.json(response);
-//     });
-// });
-
-// router.post('/lowerCase', (req, res) => {
-//   TextHelpers.lowerCase(req.body.text)
-//     .then((response) => {
-//       res.json(response);
-//     });
-// });
-
-// router.post('/camelCase', (req, res) => {
-//   TextHelpers.camelCase(req.body.text)
-//     .then((response) => {
-//       res.json(response);
-//     });
-// });
-
-// router.post('/altCase', (req, res) => {
-//   TextHelpers.altCase(req.body.text)
-//     .then((response) => {
-//       res.json(response);
-//     });
-// });
+};
