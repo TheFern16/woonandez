@@ -23,6 +23,7 @@ app.use(express.static(__dirname + '/dist'));
 // routing
 app.use('/api', router);
 
+// serve bundle
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
 });

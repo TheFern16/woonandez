@@ -5,6 +5,7 @@ const skillsData = require('./data/skills');
 const TextHelpers = require('./helperFunctions/textHelperFunctions');
 const router = require('express').Router();
 
+// fun with text
 router.post('/oxfordComma', (req, res) => {
   TextHelpers.addOxfordComma(req.body.text)
     .then((response) => {
