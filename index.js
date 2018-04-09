@@ -1,6 +1,7 @@
 // server middleware
 const express = require('express');
 const bodyParser = require('body-parser');
+const router = require('./router.js');
 
 // data
 const appData = require('./data/apps');
@@ -20,58 +21,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist'));
 
 // routing
-app.post('/api/oxfordComma', (req, res) => {
-  TextHelpers.addOxfordComma(req.body.text)
-    .then((response) => {
-      res.json(response);
-    });
-});
-
-app.post('/api/upperCase', (req, res) => {
-  TextHelpers.upperCase(req.body.text)
-    .then((response) => {
-      res.json(response);
-    });
-});
-
-app.post('/api/lowerCase', (req, res) => {
-  TextHelpers.lowerCase(req.body.text)
-    .then((response) => {
-      res.json(response);
-    });
-});
-
-app.post('/api/camelCase', (req, res) => {
-  TextHelpers.camelCase(req.body.text)
-    .then((response) => {
-      res.json(response);
-    });
-});
-
-app.post('/api/altCase', (req, res) => {
-  TextHelpers.altCase(req.body.text)
-    .then((response) => {
-      res.json(response);
-    });
-});
-
-
-// data routes
-app.get('/api/apps', (req, res) => {
-  res.send(appData.apps);
-});
-
-app.get('/api/facts', (req, res) => {
-  res.send(factData.facts);
-});
-
-app.get('/api/fun', (req, res) => {
-  res.send(funData.fun);
-});
-
-app.get('/api/skills', (req, res) => {
-  res.send(skillsData.skills);
-});
+app.use('/api', router);
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
