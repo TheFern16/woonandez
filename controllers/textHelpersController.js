@@ -11,13 +11,13 @@ module.exports = {
     textHelpers.createString(req.body.text);
   },
   lowerCase: function(req, res) {
-    textHelpers.upperCase(req.body.text);
+    textHelpers.lowerCase(req.body.text);
   },
   oxfordComma: function(req, res) {
-    textHelpers.addOxfordComma(req.body.text);
+    textHelpers.oxfordComma(req.body.text);
   },
   upperCase: function(req, res) {
-    textHelpers.lowerCase(req.body.text);
+    textHelpers.upperCase(req.body.text);
   }
 }
 

@@ -10,16 +10,22 @@ module.exports = {
       }
     });
   },
-  upperCase: function (text) {
+  upperCase: function(text) {
+    return new Promise((resolve, reject) => {
+      if (text) {
+        resolve(text.toUpperCase());
+      } else {
+        reject(Error('incorrect input'));
+      }
+    });
+  },
+  lowerCase: function(text) {
 
   },
-  lowerCase: function (text) {
+  createString: function(text) {
 
   },
-  createString: function (text) {
-
-  },
-  camelCase: function (text) {
+  camelCase: function(text) {
 
   },
   createString: function(text) {
@@ -29,30 +35,6 @@ module.exports = {
 
   }
 }
-
-
-
-// const addOxfordComma = (text) => {
-//   return new Promise((resolve, reject) => {
-//     if (text.replace(/( and)/gi, ", and")) {
-//       let testDouble = text.replace(/(,+)/gi, '');
-//       let addOComma = testDouble.replace(/( and)/gi, ', and');
-//       resolve(addOComma);
-//     } else {
-//       reject(Error('incorrect input'));
-//     }
-//   });
-// }
-
-// const upperCase = (text) => {
-//   return new Promise((resolve, reject) => {
-//     if (text) {
-//       resolve(text.toUpperCase());
-//     } else {
-//       reject(Error('incorrect input'));
-//     }
-//   });
-// }
 
 // const lowerCase = (text) => {
 //   return new Promise((resolve, reject) => {
