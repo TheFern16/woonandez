@@ -1,25 +1,11 @@
 module.exports = {
-  addOxfordComma: {
-
-  },
-  upperCase: {
-
-  },
-  lowerCase: {
-
-  },
-  createString: {
-
-  },
-  camelCase: {
-
-  },
-  createString: {
-
-  },
-  altCase: {
-
-  }
+  addOxfordComma: function() {},
+  upperCase: function () {},
+  lowerCase: function () {},
+  createString: function () {},
+  camelCase: function () {},
+  createString: function() {},
+  altCase: function() {}
 }
 
 
