@@ -1,11 +1,33 @@
 module.exports = {
-  addOxfordComma: function() {},
-  upperCase: function () {},
-  lowerCase: function () {},
-  createString: function () {},
-  camelCase: function () {},
-  createString: function() {},
-  altCase: function() {}
+  oxfordComma: function(text) {
+    return new Promise((resolve, reject) => {
+      if (text.replace(/( and)/gi, ", and")) {
+        let testDouble = text.replace(/(,+)/gi, '');
+        let addOComma = testDouble.replace(/( and)/gi, ', and');
+        resolve(addOComma);
+      } else {
+        reject(Error('incorrect input'));
+      }
+    });
+  },
+  upperCase: function (text) {
+
+  },
+  lowerCase: function (text) {
+
+  },
+  createString: function (text) {
+
+  },
+  camelCase: function (text) {
+
+  },
+  createString: function(text) {
+
+  },
+  altCase: function(text) {
+
+  }
 }
 
 
