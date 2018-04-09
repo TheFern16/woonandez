@@ -1,5 +1,25 @@
 module.exports = {
+  addOxfordComma: {
 
+  },
+  upperCase: {
+
+  },
+  lowerCase: {
+
+  },
+  createString: {
+
+  },
+  camelCase: {
+
+  },
+  createString: {
+
+  },
+  altCase: {
+
+  }
 }
 
 
