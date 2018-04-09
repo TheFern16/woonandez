@@ -60,28 +60,24 @@ module.exports = {
 
   },
   altCase: function(text) {
-
+    return new Promise((resolve, reject) => {
+      if (text) {
+        const string = text.toLowerCase();
+        let result = '';
+        for (var i = 0; i < string.length; i++) {
+          if (i % 2 !== 0) {
+            result += string[i].toUpperCase();
+          } else {
+            result += string[i];
+          }
+        }
+        resolve(result);
+      } else {
+        reject(Error('incorrect input'));
+      }
+    });
   }
 };
-
-// const altCase = (text) => {
-//   return new Promise((resolve, reject) => {
-//     if (text) {
-//       const string = text.toLowerCase();
-//       let result = '';
-//       for (var i = 0; i < string.length; i++) {
-//         if (i % 2 !== 0) {
-//           result += string[i].toUpperCase();
-//         } else {
-//           result += string[i];
-//         }
-//       }
-//       resolve(result);
-//     } else {
-//       reject(Error('incorrect input'));
-//     }
-//   });
-// }
 
 // module.exports = {
 //   addOxfordComma,
