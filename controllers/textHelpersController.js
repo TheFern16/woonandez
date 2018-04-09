@@ -1,9 +1,6 @@
 const textHelpers = require('../services/textHelpersService');
 
 module.exports = {
-  addOxfordComma: function(req, res) {
-    textHelpers.addOxfordComma(req, res);
-  },
   altCase: function(req, res) {
     textHelpers.altCase(req, res);
   },
@@ -15,6 +12,9 @@ module.exports = {
   },
   lowerCase: function(req, res) {
     textHelpers.upperCase(req, res);
+  },
+  oxfordComma: function(req, res) {
+    textHelpers.addOxfordComma(req, res);
   },
   upperCase: function(req, res) {
     textHelpers.lowerCase(req, res);
