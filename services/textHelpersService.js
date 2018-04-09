@@ -40,7 +40,21 @@ module.exports = {
     return first.concat(second);
   },
   camelCase: function(text) {
-
+    return new Promise((resolve, reject) => {
+      if (text) {
+        let strip = text.replace(/[^a-z ]/gi, '')
+        let first = strip.split(' ')[0].toLowerCase();
+        let second = strip
+          .toLowerCase()
+          .split(' ')
+          .slice(1)
+          .map(val => val[0].toUpperCase() + val.slice(1))
+          .join('');
+        resolve(first.concat(second));
+      } else {
+        reject(Error('incorrect input'));
+      }
+    });
   },
   createString: function(text) {
 
@@ -48,24 +62,7 @@ module.exports = {
   altCase: function(text) {
 
   }
-}
-// const camelCase = (text) => {
-//   return new Promise((resolve, reject) => {
-//     if (text) {
-//       let strip = text.replace(/[^a-z ]/gi, '')
-//       let first = strip.split(' ')[0].toLowerCase();
-//       let second = strip
-//         .toLowerCase()
-//         .split(' ')
-//         .slice(1)
-//         .map(val => val[0].toUpperCase() + val.slice(1))
-//         .join('');
-//       resolve(first.concat(second));
-//     } else {
-//       reject(Error('incorrect input'));
-//     }
-//   });
-// }
+};
 
 // const altCase = (text) => {
 //   return new Promise((resolve, reject) => {
