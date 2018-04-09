@@ -20,7 +20,13 @@ module.exports = {
     });
   },
   lowerCase: function(text) {
-
+    return new Promise((resolve, reject) => {
+      if (text) {
+        resolve(text.toLowerCase());
+      } else {
+        reject(Error('incorrect input'));
+      }
+    });
   },
   createString: function(text) {
 
@@ -35,17 +41,6 @@ module.exports = {
 
   }
 }
-
-// const lowerCase = (text) => {
-//   return new Promise((resolve, reject) => {
-//     if (text) {
-//       resolve(text.toLowerCase());
-//     } else {
-//       reject(Error('incorrect input'));
-//     }
-//   });
-// }
-
 // const createString = (text) => {
 //   let strip = text.replace(/[^a-z ]/gi, '')
 //   let first = strip.split(' ')[0].toLowerCase();
