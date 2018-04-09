@@ -1,8 +1,7 @@
 module.exports = {
-  addOxfordComma: {
 
-  }
 }
+
 
 
 // const addOxfordComma = (text) => {
