@@ -15,9 +15,9 @@ app.use(bodyParser.json());
 app.use('/api', router);
 
 // serve bundle
-app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/dist/index.html');
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(__dirname + '/dist/index.html');
+// });
 
 // listening to port 1337
 app.listen(port, () => {

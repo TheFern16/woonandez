@@ -11,14 +11,15 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
 import { TechComponent } from './aboutme/tech/tech.component';
+import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
+import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
+import { GuestbookComponent } from './guestbook/guestbook.component';
+import { ModalComponent } from './aboutme/modal/modal.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { RequestService } from './services';
 
-import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
-import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
-import { ModalComponent } from './aboutme/modal/modal.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ModalComponent } from './aboutme/modal/modal.component';
     PhotoComponent,
     TechComponent,
     RandomfactComponent,
+    GuestbookComponent,
     FunWithTextComponent,
     ModalComponent
   ],

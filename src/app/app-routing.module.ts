@@ -5,12 +5,14 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { HomeComponent } from './home/home.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
+import { GuestbookComponent } from './guestbook/guestbook.component';
 
 const appRoutes: Routes = [
   { path: 'apps', component: ProjectsComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'funWithText', component: FunWithTextComponent },
+  { path: 'guestbook', component: GuestbookComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }
 ]
