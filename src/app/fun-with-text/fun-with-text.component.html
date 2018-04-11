@@ -5,11 +5,11 @@
       <p class="lead">{{ this.outputText }}</p>
     </div>
     <div class="btn-group" role="group">
-       <button (click)="setText($event)" type="button" class="btn btn-primary">Add Oxford Commas!</button>
-       <button (click)="setText($event)" type="button" class="btn btn-primary">UPPERCASE!</button>
-       <button (click)="setText($event)" type="button" class="btn btn-primary">lowercase!</button>
-       <button (click)="setText($event)" type="button" class="btn btn-primary">aLtTeXt!</button>
-       <button (click)="setText($event)" type="button" class="btn btn-primary">camelCase!</button>
+       <button (click)="addOxfordCommas()" type="button" class="btn btn-primary">Add Oxford Commas!</button>
+       <button (click)="upperCaseText()" type="button" class="btn btn-primary">UPPERCASE!</button>
+       <button (click)="lowerCaseText()" type="button" class="btn btn-primary">lowercase!</button>
+       <button (click)="camelCaseText()" type="button" class="btn btn-primary">aLtTeXt!</button>
+       <button (click)="altCaseText()" type="button" class="btn btn-primary">camelCase!</button>
     </div>
 </div>
 
@@ -19,8 +19,5 @@
       <label for="exampleFormControlTextarea1">Input Text</label>
       <textarea [(ngModel)]="inputText" name="inputText" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-  </div>
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary" (click)="handleRequest()">Submit</button>
   </div>
 </form>

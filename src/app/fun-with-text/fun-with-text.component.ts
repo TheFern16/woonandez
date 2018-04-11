@@ -15,24 +15,6 @@ export class FunWithTextComponent implements OnInit {
 
   ngOnInit() {}
 
-  setText(event)  {
-    this.invokeFunction = event.target.textContent;
-  }
-
-  handleRequest() {
-    if (this.invokeFunction === 'Add Oxford Commas!') {
-      this.addOxfordCommas();
-    } else if (this.invokeFunction === 'UPPERCASE!') {
-      this.upperCaseText();
-    } else if (this.invokeFunction === 'lowercase!') {
-      this.lowerCaseText();
-    } else if (this.invokeFunction === 'camelCase!') {
-      this.camelCaseText();
-    } else if (this.invokeFunction === 'aLtTeXt!') {
-      this.altCaseText();
-    }
-  }
-
   addOxfordCommas() {
     this.requestService.addOxfordComma(JSON.stringify(this.inputText))
       .subscribe(response => {
