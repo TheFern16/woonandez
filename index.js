@@ -9,7 +9,7 @@ const port = process.env.PORT || 1337;
 
 // serve client files
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/dist'));
+// app.use(express.static(__dirname + '/dist'));
 
 // routing
 app.use('/api', router);
