@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ModalComponent } from './components/aboutme/modal/modal.component';
