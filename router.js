@@ -6,6 +6,7 @@ const skillsData = require('./data/skills');
 const textController = require('./controllers/textHelpersController');
 const commentsController = require('./controllers/commentsController');
 
+// fwt
 router.post('/altCase', textController.altCase);
 router.post('camelCase', textController.camelCase);
 router.post('/lowerCase', textController.lowerCase);
@@ -13,6 +14,7 @@ router.post('/oxfordComma', textController.oxfordComma);
 router.post('/upperCase', textController.upperCase);
 router.post('/camelCase', textController.camelCase);
 
+// comments routing
 router.get('/comments', commentsController.findAll);
 
 // data routes

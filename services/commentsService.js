@@ -1,7 +1,7 @@
-const commentsRepo = require('/repository/commentsRepository');
+const commentsRepo = require('../repo/commentsRepository.js');
 
 module.exports = {
   findAll: function(req, res) {
-
+    commentsRepo.findAll(req, res);
   }
 }
