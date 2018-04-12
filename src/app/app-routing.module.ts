@@ -5,7 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { HomeComponent } from './home/home.component';
 import { FunWithTextComponent } from './components/fun-with-text/fun-with-text.component';
-import { GuestbookComponent } from './guestbook/guestbook.component';
+import { GuestbookComponent } from './components/guestbook/guestbook.component';
 
 const appRoutes: Routes = [
   { path: 'apps', component: ProjectsComponent },

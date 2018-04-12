@@ -13,10 +13,10 @@ import { ModalComponent } from './components/aboutme/modal/modal.component';
 import { RandomfactComponent } from './components/aboutme/randomfact/randomfact.component';
 import { TechComponent } from './components/aboutme/tech/tech.component';
 import { FunWithTextComponent } from './components/fun-with-text/fun-with-text.component';
+import { GuestbookComponent } from './components/guestbook/guestbook.component';
 
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
-import { GuestbookComponent } from './guestbook/guestbook.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
