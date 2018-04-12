@@ -1,7 +1,14 @@
 const woonandez = require('../db/connect.js');
 
 module.exports = {
-  findAll: function(req, res) {
-    console.log('rank');
+  findAll: function() {
+    return new Promise((res, rej) => {
+      woonandez.query({
+          name: 'find all comments',
+          text: 'SELECT * FROM COMMENTS'
+      })
+      .then(result => res(result.row))
+      .catch(e => console.error(e))
+    });
   }
 }
