@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { photo } from 'app/interfaces/interfaces';
+import { photo } from 'app/shared/interfaces/interfaces';
 
 
 @Component({

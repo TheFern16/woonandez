@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { skill } from 'app/interfaces/interfaces';
+import { skill } from 'app/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-tech',
