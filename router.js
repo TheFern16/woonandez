@@ -4,6 +4,7 @@ const factData = require('./data/facts');
 const funData = require('./data/facts');
 const skillsData = require('./data/skills');
 const textController = require('./controllers/textHelpersController');
+const commentsController = require('./controllers/commentsController');
 
 router.post('/altCase', textController.altCase);
 router.post('camelCase', textController.camelCase);
@@ -12,6 +13,7 @@ router.post('/oxfordComma', textController.oxfordComma);
 router.post('/upperCase', textController.upperCase);
 router.post('/camelCase', textController.camelCase);
 
+router.get('/comments', commentsController.findAll);
 
 // data routes
 router.get('/apps', (req, res) => {
