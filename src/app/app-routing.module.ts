@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProjectsComponent } from './projects/projects.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { HomeComponent } from './home/home.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
 import { GuestbookComponent } from './guestbook/guestbook.component';

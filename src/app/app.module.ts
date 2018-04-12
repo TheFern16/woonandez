@@ -7,14 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
+
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { ModalComponent } from './components/aboutme/modal/modal.component';
+import { RandomfactComponent } from './components/aboutme/randomfact/randomfact.component';
+import { TechComponent } from './components/aboutme/tech/tech.component';
+
 import { ProjectsComponent } from './projects/projects.component';
 import { PhotoComponent } from './projects/photo/photo.component';
-import { TechComponent } from './aboutme/tech/tech.component';
-import { RandomfactComponent } from './aboutme/randomfact/randomfact.component';
 import { FunWithTextComponent } from './fun-with-text/fun-with-text.component';
 import { GuestbookComponent } from './guestbook/guestbook.component';
-import { ModalComponent } from './aboutme/modal/modal.component';
 
 import { AppRoutingModule } from './app-routing.module';
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { fact } from '../../interfaces/interfaces';
+import { fact } from 'app/interfaces/interfaces';
 
 @Component({
   selector: 'app-modal',
