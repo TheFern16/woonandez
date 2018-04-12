@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RequestService } from 'app/services/request.service';
+import { RequestService } from 'app/shared';
 
 @Component({
   selector: 'app-fun-with-text',

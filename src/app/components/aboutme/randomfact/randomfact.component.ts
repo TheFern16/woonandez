@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { fact } from 'app/shared/interfaces/interfaces';
+import { fact } from 'app/shared';
 @Component({
   selector: 'app-randomfact',
   templateUrl: './randomfact.component.html',

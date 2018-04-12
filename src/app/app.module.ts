@@ -20,7 +20,7 @@ import { PhotoComponent } from './components/projects/photo/photo.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { RequestService } from './services';
+import { RequestService } from './shared';
 
 
 
