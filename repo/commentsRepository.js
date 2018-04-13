@@ -15,8 +15,8 @@ module.exports = {
     return new Promise((res, rej) => {
       woonandez.query({
         name: 'persist user',
-        text: 'INSERT INTO COMMENTS(day, comment) VALUES ($1, $2)',
-        values: [req.body.day, req.body.comment]
+        text: 'INSERT INTO COMMENTS(comment) VALUES ($1)',
+        values: [body.comment]
       })
       .then(result => res(result))
       .catch(e => console.error(e))

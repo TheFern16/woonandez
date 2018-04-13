@@ -10,5 +10,6 @@ module.exports = {
       .then(res => {
         console.log('response');
       })
+      .catch(error => res.json(error));
   }
 }
