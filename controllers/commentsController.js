@@ -7,7 +7,12 @@ module.exports = {
         const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
         req.body.comment_id = foundUserId;
 
-        console.log(req.body);
+        if (foundUserId) {
+           commentsService.delete(req, res)
+            .then(r => {
+              console.log('r', r);
+            });
+        }
       });
   },
   findAll: function(req, res) {
@@ -25,7 +30,7 @@ module.exports = {
         const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
         req.body.comment_id = foundUserId;
 
-        if (req.body.comment_id) {
+        if (foundUserId) {
           commentsService.update(req, res)
             .then(r => res.json(r.rowCount));
         }
