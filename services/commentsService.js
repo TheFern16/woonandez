@@ -9,6 +9,6 @@ module.exports = {
     })
   },
   persist: function(req, res) {
-    console.log('ran');
+    commentsRepo.persist(req.body);
   }
 }

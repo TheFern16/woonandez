@@ -10,5 +10,8 @@ module.exports = {
       .then(result => res(result.rows))
       .catch(e => console.error(e))
     });
+  },
+  persist: function(body) {
+    console.log('body', body);
   }
 }
