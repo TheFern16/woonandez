@@ -7,9 +7,7 @@ module.exports = {
   },
   persist: function(req, res) {
     commentsService.persist(req, res)
-      .then(res => {
-        console.log('response');
-      })
+      .then(response => res.json(response.rowCount))
       .catch(error => res.json(error));
   }
 }

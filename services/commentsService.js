@@ -9,9 +9,9 @@ module.exports = {
     });
   },
   persist: function(req, res) {
-    return new Promise((res, rej) => {
+    return new Promise((resolve, reject) => {
       commentsRepo.persist(req.body)
-        .then(response => res(res))
+        .then(response => resolve(response))
         .catch(error => console.error(error));
     });
   }
