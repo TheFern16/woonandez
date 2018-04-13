@@ -12,7 +12,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
       commentsRepo.findAll()
         .then(response => resolve(response))
-        .catch(error => console.error(rej(error)));
+        .catch(error => console.error(error));
     });
   },
   findOne: function(req, res) {

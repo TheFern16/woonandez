@@ -9,18 +9,13 @@ module.exports = {
 
         if (foundUserId) {
            commentsService.delete(req, res)
-            .then(r => {
-              console.log('r', r);
-            });
+            .then(r => res.json(r.rowCount));
         }
       });
   },
   findAll: function(req, res) {
     commentsService.findAll(req, res)
-      .then(result => {
-        console.log(result);
-        res.json(result)
-      })
+      .then(result => res.json(result))
       .catch(error => res.json(error));
   },
   persist: function(req, res) {
