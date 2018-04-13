@@ -14,5 +14,8 @@ module.exports = {
         .then(response => resolve(response))
         .catch(error => console.error(error));
     });
+  },
+  update: function(req, res) {
+    console.log('ran');
   }
 }

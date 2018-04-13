@@ -17,6 +17,7 @@ router.post('/camelCase', textController.camelCase);
 // comments routing
 router.get('/comments', commentsController.findAll);
 router.post('/comments', commentsController.persist);
+router.put('/comments', commentsController.update);
 
 // data routes
 router.get('/apps', (req, res) => {

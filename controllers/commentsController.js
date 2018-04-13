@@ -9,5 +9,8 @@ module.exports = {
     commentsService.persist(req, res)
       .then(response => res.json(response.rowCount))
       .catch(error => res.json(error));
+  },
+  update: function(req, res) {
+    commentsService.update(req, res)
   }
 }
