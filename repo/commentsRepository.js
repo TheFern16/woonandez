@@ -1,6 +1,11 @@
 const woonandez = require('../db/connect.js');
 
 module.exports = {
+  delete: function(body) {
+    return new Promise((resolve, reject) => {
+      console.log('ran');
+    })
+  },
   findAll: function() {
     return new Promise((resolve, reject) => {
       woonandez.query({

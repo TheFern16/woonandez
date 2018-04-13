@@ -15,10 +15,10 @@ router.post('/upperCase', textController.upperCase);
 router.post('/camelCase', textController.camelCase);
 
 // comments routing
+router.delete('/comments', commentsController.delete);
 router.get('/comments', commentsController.findAll);
 router.post('/comments', commentsController.persist);
 router.put('/comments', commentsController.update);
-router.delete('/comments', commentsController.delete);
 
 // data routes
 router.get('/apps', (req, res) => {

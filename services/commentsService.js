@@ -1,6 +1,13 @@
 const commentsRepo = require('../repo/commentsRepository.js');
 
 module.exports = {
+  delete: function(req, res) {
+    return new Promise((resolve, reject) => {
+      commentsRepo.delete(req.body)
+        .then(response => resolve(response))
+        .catch(error => console.error(error));
+    });
+  },
   findAll: function() {
     return new Promise((resolve, reject) => {
       commentsRepo.findAll()

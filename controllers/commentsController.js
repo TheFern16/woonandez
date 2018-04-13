@@ -1,6 +1,15 @@
 const commentsService = require('../services/commentsService.js');
 
 module.exports = {
+  delete: function(req, res) {
+    commentsService.findOne(req, res)
+      .then(response => {
+        const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
+        req.body.comment_id = foundUserId;
+
+        console.log(req.body);
+      });
+  },
   findAll: function(req, res) {
     commentsService.findAll(req, res)
       .then(result => res.json(result));
@@ -20,15 +29,6 @@ module.exports = {
           commentsService.update(req, res)
             .then(r => res.json(r.rowCount));
         }
-      });
-  },
-  delete: function(req, res) {
-    commentsService.findOne(req, res)
-      .then(response => {
-        const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
-        req.body.comment_id = foundUserId;
-
-        console.log(req.body);
       });
   }
 }
