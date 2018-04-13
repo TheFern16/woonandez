@@ -13,7 +13,9 @@ module.exports = {
   update: function(req, res) {
     commentsService.findOne(req, res)
       .then(response => {
-        console.log(response, 'here')
-      })
+        const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
+        req.body.comment_id = foundUserId;
+        console.log(req.body, 'here')
+      });
   }
 }

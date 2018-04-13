@@ -2,9 +2,9 @@ const commentsRepo = require('../repo/commentsRepository.js');
 
 module.exports = {
   findAll: function() {
-    return new Promise((res, rej) => {
+    return new Promise((resolve, reject) => {
       commentsRepo.findAll()
-        .then(response => res(response))
+        .then(response => resolve(response))
         .catch(error => console.error(error));
     });
   },

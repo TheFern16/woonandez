@@ -13,12 +13,12 @@ module.exports = {
   },
   findOne: function(id) {
     return new Promise((resolve, reject) => {
-      woonandez: woonandez.query({
+      woonandez.query({
         name: 'find one',
         text: 'SELECT * FROM COMMENTS WHERE comment_id = $1',
         values: [id]
       })
-      .then(result => resolve(result.rows))
+      .then(result => resolve(result.rows[0]))
       .catch(e => console.error(e));
     });
   },
