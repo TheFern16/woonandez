@@ -15,7 +15,10 @@ module.exports = {
       .then(response => {
         const foundUserId = JSON.parse(JSON.stringify(response)).comment_id;
         req.body.comment_id = foundUserId;
-        console.log(req.body, 'here')
+        if (req.body.comment_id) {
+          commentsService.update(req, res)
+            .then(r => res.json(r.rowCount));
+        }
       });
   }
 }

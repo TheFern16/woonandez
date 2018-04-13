@@ -23,6 +23,10 @@ module.exports = {
     });
   },
   update: function(req, res) {
-    console.log('ran');
+    return new Promise((resolve, reject) => {
+      commentsRepo.update(req.body)
+        .then(response => resolve(response))
+        .catch(error => console.error(error))
+    });
   }
 }

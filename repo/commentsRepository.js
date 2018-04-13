@@ -37,7 +37,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
       woonandez.query({
         name: 'udate user',
-        text: 'INSERT INTO COMMENTS(comment) VALUES ($1) WHERE comment_id = $2',
+        text: 'UPDATE COMMENTS SET comment = $1 WHERE comment_id = $2',
         values: [body.comment, body.comment_id]
       })
       .then(result => resolve(result))
