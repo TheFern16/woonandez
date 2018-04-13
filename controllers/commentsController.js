@@ -11,6 +11,9 @@ module.exports = {
       .catch(error => res.json(error));
   },
   update: function(req, res) {
-    commentsService.update(req, res)
+    commentsService.findOne(req, res)
+      .then(response => {
+        console.log(response, 'here')
+      })
   }
 }
