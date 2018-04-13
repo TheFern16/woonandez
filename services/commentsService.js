@@ -7,5 +7,8 @@ module.exports = {
         .then(response => res(response))
         .catch(error => console.error(error));
     })
+  },
+  persist: function(req, res) {
+    console.log('ran');
   }
 }
