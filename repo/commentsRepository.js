@@ -3,8 +3,14 @@ const woonandez = require('../db/connect.js');
 module.exports = {
   delete: function(body) {
     return new Promise((resolve, reject) => {
-      console.log('ran');
-    })
+      woonandez.query({
+        name: 'delete comment',
+        text: 'DELETE FROM COMMENTS WHERE comment_id = $1',
+        values: [body.comment_id]
+      })
+      .then(result => resolve(result))
+      .catch(e => console.error(e))
+    });
   },
   findAll: function() {
     return new Promise((resolve, reject) => {
