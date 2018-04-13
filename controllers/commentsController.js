@@ -17,7 +17,11 @@ module.exports = {
   },
   findAll: function(req, res) {
     commentsService.findAll(req, res)
-      .then(result => res.json(result));
+      .then(result => {
+        console.log(result);
+        res.json(result)
+      })
+      .catch(error => res.json(error));
   },
   persist: function(req, res) {
     commentsService.persist(req, res)

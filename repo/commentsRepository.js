@@ -16,7 +16,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
       woonandez.query({
         name: 'find all comments',
-        text: 'SELECT * FROM COMMENTS ORDER'
+        text: 'SELECT * FROM COMMENTS'
       })
       .then(result => resolve(result.rows))
       .catch(e => console.error(e))
