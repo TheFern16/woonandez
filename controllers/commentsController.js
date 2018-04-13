@@ -6,6 +6,9 @@ module.exports = {
       .then(result => res.json(result));
   },
   persist: function(req, res) {
-    commentsService.persist(req, res);
+    commentsService.persist(req, res)
+      .then(res => {
+        console.log('response');
+      })
   }
 }

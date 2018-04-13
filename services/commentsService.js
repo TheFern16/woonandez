@@ -6,9 +6,13 @@ module.exports = {
       commentsRepo.findAll()
         .then(response => res(response))
         .catch(error => console.error(error));
-    })
+    });
   },
   persist: function(req, res) {
-    commentsRepo.persist(req.body);
+    return new Promise((res, rej) => {
+      commentsRepo.persist(req.body)
+        .then(response => res(res))
+        .catch(error => console.error(error));
+    });
   }
 }

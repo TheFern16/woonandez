@@ -18,7 +18,7 @@ module.exports = {
         text: 'INSERT INTO COMMENTS(day, comment) VALUES ($1, $2)',
         values: [req.body.day, req.body.comment]
       })
-      .then((result => res(result))
+      .then(result => res(result))
       .catch(e => console.error(e))
     });
   }
