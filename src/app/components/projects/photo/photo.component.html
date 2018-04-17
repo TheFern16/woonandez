@@ -1,11 +1,11 @@
 <div class="card">
-  <img class="card-img-top" [src]="photo.thumbnail" alt="photo.desc">
+  <img class="card-img-top" src="{{photo.thumbnail}}" alt="p.desc">
   <div class="card-body">
     <h3 class="card-title">{{ photo.appName }}</h3>
     <p class="card-text">{{ photo.desc }}</p>
     <p>
-      <a [href]="photo.full" class="btn btn-primary" role="button" target="blank">Full Photo</a>
-      <a [href]="photo.github" class="btn btn-info" role="button" target="blank">GitHub</a>
+      <a href="{{photo.full}}" class="btn btn-primary" role="button" target="blank">Full Photo</a>
+      <a href="{{photo.github}}" class="btn btn-info" role="button" target="blank">GitHub</a>
     </p>
   </div>
 </div>

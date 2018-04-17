@@ -13,11 +13,8 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('/api/apps')
-      .subscribe(data => {
-        this.photos = data
-      });
+      .subscribe(data => this.photos = data);
   }
-
 }
 
 

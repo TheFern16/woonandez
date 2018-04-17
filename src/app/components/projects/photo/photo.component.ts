@@ -12,6 +12,6 @@ export class PhotoComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
-
+  ngOnInit() {
+  }
 }
