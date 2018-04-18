@@ -38,4 +38,7 @@ export class RequestService {
     return this.http.get('/api/facts');
   }
 
+  getComments() {
+    return this.http.get('/api/comments');
+  }
 }
