@@ -16,3 +16,9 @@ export interface photo {
   github: string,
   desc: string
 }
+
+export interface Comment {
+  comment: string,
+  comment_id: number,
+  timestamp: string
+}
