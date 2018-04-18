@@ -1,5 +1,5 @@
 <div>
   <ul>
-    <li *ngFor="let comment of comments">{{ comment | json }}</li>
+    <li *ngFor="let comment of comments">{{ comment.timestamp }} {{ comment.comment }}</li>
   </ul>
 </div>
