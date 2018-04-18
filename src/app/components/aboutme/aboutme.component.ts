@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RequestService } from 'app/shared';
+import { RequestService, Skill, Fact } from 'app/shared';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,8 +7,8 @@ import { RequestService } from 'app/shared';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  skills: any = [];
-  facts: any = [];
+  skills: Array<Skill> = [];
+  facts: Array<Fact> = [];
   showModal: boolean = false;
 
   constructor(private requestService: RequestService) {}
@@ -17,11 +17,15 @@ export class AboutmeComponent implements OnInit {
 
     this.requestService.gatherFacts()
       .subscribe(data => {
-        this.facts = data;
+        if (Array.isArray(data)) {
+          this.facts = data;
+        }
       });
     this.requestService.gatherSkills()
       .subscribe(data => {
-        this.skills = data;
+        if (Array.isArray(data)) {
+          this.skills = data;
+        }
       });
   }
 
