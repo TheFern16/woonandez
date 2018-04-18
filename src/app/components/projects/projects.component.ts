@@ -8,13 +8,17 @@ import { Photo } from 'app/shared';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  photos: any = [];
+  photos: Array<Photo> = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.http.get('/api/apps')
-      .subscribe(data => this.photos = data);
+      .subscribe(data => {
+        if (Array.isArray(data)) {
+          this.photos = data;
+        }
+      });
   }
 }
 
