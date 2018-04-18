@@ -14,12 +14,14 @@ export class GuestbookComponent implements OnInit {
   ngOnInit() {
     this.reqService.getComments()
       .subscribe((res) => {
-        this.comments = res.map(comment => {
-          if (comment.timestamp) {
-            comment.timestamp = this.formateDate(comment.timestamp);
-          }
-          return comment;
-        })
+        if (Array.isArray(res)) {
+          this.comments = res.map(comment => {
+            if (comment.timestamp) {
+              comment.timestamp = this.formateDate(comment.timestamp);
+            }
+            return comment;
+          });
+        }
       });
   }
 

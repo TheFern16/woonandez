@@ -4,8 +4,9 @@
   <br>
 </div>
 
-<div>
-  <ul>
-    <li *ngFor="let comment of comments">{{ comment.timestamp }} {{ comment.comment }}</li>
-  </ul>
+<div class="card-columns">
+  <div class="card" *ngFor="let comment of comments">
+    <h6>{{ comment.timestamp }}</h6>
+    <h5>{{ comment.comment }}</h5>
+  </div>
 </div>
