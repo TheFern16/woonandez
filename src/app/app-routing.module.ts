@@ -12,7 +12,7 @@ const appRoutes: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'funWithText', component: FunWithTextComponent },
-  { path: 'guestbook', component: GuestbookComponent },
+  { path: 'guestBook', component: GuestbookComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }
 ]

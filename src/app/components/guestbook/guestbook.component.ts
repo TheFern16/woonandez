@@ -10,6 +10,9 @@ export class GuestbookComponent implements OnInit {
   constructor(private reqService: RequestService) {}
 
   ngOnInit() {
-    console.log(this.reqService);
+    this.reqService.getComments()
+      .subscribe((res) => {
+        console.log('res', res);
+      });
   }
 }
