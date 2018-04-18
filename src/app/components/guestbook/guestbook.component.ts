@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from 'app/shared';
 
 @Component({
   selector: 'guestbook',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
-  constructor() {}
+  constructor(private reqService: RequestService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.reqService);
+  }
 }
