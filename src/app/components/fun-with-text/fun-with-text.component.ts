@@ -9,7 +9,6 @@ import { RequestService } from 'app/shared';
 export class FunWithTextComponent implements OnInit {
   inputText: any = 'Input Text here.';
   outputText: any = 'Output will go here.';
-  invokeFunction: any = 'Add Oxford Commas!';
 
   constructor(private requestService: RequestService) {}
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { skill } from 'app/shared';
+import { Skill } from 'app/shared';
 
 @Component({
   selector: 'app-tech',
@@ -7,7 +7,7 @@ import { skill } from 'app/shared';
   styleUrls: ['./tech.component.css']
 })
 export class TechComponent implements OnInit {
-  @Input('skill') skill: skill;
+  @Input('skill') skill: Skill;
 
   constructor() {}
 

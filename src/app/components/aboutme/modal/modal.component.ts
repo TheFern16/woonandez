@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { fact } from 'app/shared';
+import { Fact } from 'app/shared';
 
 @Component({
   selector: 'app-modal',
@@ -7,7 +7,7 @@ import { fact } from 'app/shared';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  @Input('facts') facts: Array<fact>;
+  @Input('facts') facts: Array<Fact>;
 
   constructor() {}
 

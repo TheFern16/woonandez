@@ -7,7 +7,7 @@ import { RequestService, Comment } from 'app/shared';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
-  private comments: any;
+  private comments: Array<Comment>;
 
   constructor(private reqService: RequestService) {}
 

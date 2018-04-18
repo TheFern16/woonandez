@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { photo } from 'app/shared';
+import { Photo } from 'app/shared';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { photo } from 'app/shared';
   styleUrls: ['./photo.component.css']
 })
 export class PhotoComponent implements OnInit {
-  @Input('photo') photo: photo;
+  @Input('photo') photo: Photo;
 
   constructor() {}
 
