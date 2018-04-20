@@ -8,9 +8,9 @@ import { RequestService, Comment } from 'app/shared';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
-  private comments: any;
-  private commentForm: FormGroup;
-  private newComment: any;
+  comments: any;
+  commentForm: FormGroup;
+  newComment: any;
 
   constructor(private reqService: RequestService, private fb: FormBuilder) {}
 
