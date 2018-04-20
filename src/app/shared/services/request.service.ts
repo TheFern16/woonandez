@@ -30,9 +30,9 @@ export class RequestService {
     return this.http.post('/api/camelCase', { text }, { headers, responseType: 'text' });
   }
 
-  addComment(obj: any) {
+  addComment(comment: any) {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post('/api/comments', { obj }, { headers });
+    return this.http.post('/api/comments', { comment }, { headers });
   }
 
   gatherSkills() {
