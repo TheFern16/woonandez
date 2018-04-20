@@ -42,10 +42,16 @@ export class GuestbookComponent implements OnInit {
 
   prepareComment() {
     const newComment = this.commentForm.value;
-    console.log(newComment);
+
+    if (newComment.post.length > 0 && this.commentForm.status === 'VALID') {
+      return this.commentForm.value;
+    } else {
+      return false;
+    }
   }
 
   onSubmit() {
     this.newComment = this.prepareComment();
+    console.log(this.newComment);
   }
 }
