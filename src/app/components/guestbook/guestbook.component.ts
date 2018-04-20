@@ -69,10 +69,9 @@ export class GuestbookComponent implements OnInit {
     if (this.newComment === false) {
       return this.rebuildForm()
     } else {
-      this.reqService.addComment(this.newComment.comment)
-        .subscribe(res => {
-          console.log(res, 'res');
-        })
+      this.reqService
+        .addComment(this.newComment.comment)
+        .subscribe(res => this.comments = this.fetchComments());
     }
   }
 }
