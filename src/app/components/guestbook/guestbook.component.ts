@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RequestService, Comment } from 'app/shared';
 
@@ -36,6 +36,16 @@ export class GuestbookComponent implements OnInit {
     });
   }
 
+  ngOnChanges() {
+    this.rebuildForm();
+  }
+
+  rebuildForm() {
+    this.commentForm.reset({
+      name: ''
+    });
+  }
+
   formateDate(dateString) {
     return new Date(dateString).toUTCString().slice(0, 16);
   }
@@ -55,3 +65,6 @@ export class GuestbookComponent implements OnInit {
     console.log(this.newComment);
   }
 }
+
+
+
