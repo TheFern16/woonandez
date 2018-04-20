@@ -2,16 +2,13 @@
   <h1 class="display-3">Guestbook</h1>
   <p class="lead">Please feel free to sign in!</p>
   <br>
-  <div class="input-group">
-    <form [formGroup]="commentForm">
-      <textarea
-        class="form-control"
-        aria-label="With textarea"
-        formControl="post"></textarea>
+  <div class="form-group">
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+      <textarea class="form-control" formControl="post"></textarea>
     </form>
-  </div>
-  <div>
-    <button type="button" class="btn btn-primary btn-lg">Sign In</button>
+    <div>
+      <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+    </div>
   </div>
 </div>
 
