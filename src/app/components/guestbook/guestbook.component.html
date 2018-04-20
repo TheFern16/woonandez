@@ -3,7 +3,12 @@
   <p class="lead">Please feel free to sign in!</p>
   <br>
   <div class="input-group">
-    <textarea class="form-control" aria-label="With textarea"></textarea>
+    <form [formGroup]="commentForm">
+      <textarea
+        class="form-control"
+        aria-label="With textarea"
+        formControl="post"></textarea>
+    </form>
   </div>
   <div>
     <button type="button" class="btn btn-primary btn-lg">Sign In</button>

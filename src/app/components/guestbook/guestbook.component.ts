@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { RequestService, Comment } from 'app/shared';
 
 @Component({
@@ -8,8 +8,10 @@ import { RequestService, Comment } from 'app/shared';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
-  private post = new FormControl();
   private comments: Array<Comment>;
+  commentForm = new FormGroup({
+    comment: new FormControl()
+  });
 
   constructor(private reqService: RequestService) {}
 
