@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { RequestService, Comment } from 'app/shared';
 
 @Component({
@@ -7,6 +8,7 @@ import { RequestService, Comment } from 'app/shared';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
+  private post = new FormControl();
   private comments: Array<Comment>;
 
   constructor(private reqService: RequestService) {}
