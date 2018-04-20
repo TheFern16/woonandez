@@ -32,7 +32,7 @@ export class GuestbookComponent implements OnInit {
 
   createForm() {
     this.commentForm = this.fb.group({
-      post: ''
+      comment: ''
     });
   }
 
@@ -42,7 +42,7 @@ export class GuestbookComponent implements OnInit {
 
   rebuildForm() {
     this.commentForm.reset({
-      name: ''
+      comment: ''
     });
   }
 
@@ -53,7 +53,7 @@ export class GuestbookComponent implements OnInit {
   prepareComment() {
     const newComment = this.commentForm.value;
 
-    if (newComment.post.length > 0 && this.commentForm.status === 'VALID') {
+    if (newComment.comment.length > 0 && this.commentForm.status === 'VALID') {
       return this.commentForm.value;
     } else {
       return false;
@@ -62,7 +62,15 @@ export class GuestbookComponent implements OnInit {
 
   onSubmit() {
     this.newComment = this.prepareComment();
-    console.log(this.newComment);
+
+    if (this.newComment === false) {
+      return this.rebuildForm()
+    } else {
+      this.reqService.addComment(this.newComment)
+        .subscribe(res => {
+          console.log(res, 'res');
+        })
+    }
   }
 }
 
