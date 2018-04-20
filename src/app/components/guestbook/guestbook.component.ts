@@ -16,8 +16,11 @@ export class GuestbookComponent implements OnInit {
 
   ngOnInit() {
     this.createForm();
+    this.fetchComments();
+  }
 
-    this.reqService.getComments()
+  fetchComments() {
+    return this.reqService.getComments()
       .subscribe((res) => {
         if (Array.isArray(res)) {
           this.comments = res.map(comment => {
