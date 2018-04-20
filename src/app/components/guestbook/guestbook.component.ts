@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RequestService, Comment } from 'app/shared';
 
 @Component({
@@ -9,11 +9,14 @@ import { RequestService, Comment } from 'app/shared';
 })
 export class GuestbookComponent implements OnInit {
   private comments: Array<Comment>;
-  commentForm = FormGroup;
+  private commentForm: FormGroup;
+  private newComment: any;
 
   constructor(private reqService: RequestService, private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.createForm();
+
     this.reqService.getComments()
       .subscribe((res) => {
         if (Array.isArray(res)) {
@@ -28,12 +31,21 @@ export class GuestbookComponent implements OnInit {
   }
 
   createForm() {
-
+    this.commentForm = this.fb.group({
+      post: ''
+    });
   }
 
   formateDate(dateString) {
     return new Date(dateString).toUTCString().slice(0, 16);
   }
 
-  onSubmit() {}
+  prepareComment() {
+    const newComment = this.commentForm.value;
+    console.log(newComment);
+  }
+
+  onSubmit() {
+    this.newComment = this.prepareComment();
+  }
 }

@@ -4,11 +4,11 @@
   <br>
   <div class="form-group">
     <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
-      <textarea class="form-control" formControl="post"></textarea>
+      <textarea class="form-control" formControlName="post"></textarea>
+      <div>
+        <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+      </div>
     </form>
-    <div>
-      <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
-    </div>
   </div>
 </div>
 
