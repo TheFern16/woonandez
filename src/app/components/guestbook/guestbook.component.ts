@@ -8,7 +8,7 @@ import { RequestService, Comment } from 'app/shared';
   styleUrls: ['./guestbook.component.css']
 })
 export class GuestbookComponent implements OnInit {
-  private comments: Array<Comment>;
+  private comments: any;
   private commentForm: FormGroup;
   private newComment: any;
 
@@ -17,6 +17,10 @@ export class GuestbookComponent implements OnInit {
   ngOnInit() {
     this.createForm();
     this.fetchComments();
+  }
+
+  ngOnChanges() {
+    this.rebuildForm();
   }
 
   fetchComments() {
@@ -37,10 +41,6 @@ export class GuestbookComponent implements OnInit {
     this.commentForm = this.fb.group({
       comment: ''
     });
-  }
-
-  ngOnChanges() {
-    this.rebuildForm();
   }
 
   rebuildForm() {
