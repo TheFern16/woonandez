@@ -2,7 +2,11 @@
   <h1 class="display-3">Guestbook</h1>
   <p class="lead">Please feel free to sign in!</p>
   <br>
+  <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
 </div>
+
 
 <div class="card-columns">
   <div class="card" *ngFor="let comment of comments">
@@ -10,3 +14,6 @@
     <h5>{{ comment.comment }}</h5>
   </div>
 </div>
+
+
+

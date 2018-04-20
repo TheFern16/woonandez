@@ -14,7 +14,6 @@ export class AboutmeComponent implements OnInit {
   constructor(private requestService: RequestService) {}
 
   ngOnInit() {
-
     this.requestService.gatherFacts()
       .subscribe(data => {
         if (Array.isArray(data)) {
