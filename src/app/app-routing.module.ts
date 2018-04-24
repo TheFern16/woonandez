@@ -20,7 +20,8 @@ const appRoutes: Routes = [
 const lazyRoutes: Routes = [
   { path: 'apps', loadChildren: './components/projects/projects.module#ProjectsModule' },
   { path: 'aboutMe', loadChildren: './components/aboutme/aboutme.module#AboutMeModule' },
-  { path: ''}
+  { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
+  { path: 'fu'}
 ]
 
 @NgModule({
