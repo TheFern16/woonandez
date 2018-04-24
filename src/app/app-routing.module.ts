@@ -17,8 +17,20 @@ const appRoutes: Routes = [
   { path: '**', component: HomeComponent }
 ]
 
+const lazyRoutes: Routes = [
+  {
+    path: 'apps',
+    loadChildren: './components/projects/projects.module#ProjectsModule'
+  }
+]
+
 @NgModule({
   imports: [ RouterModule.forRoot(appRoutes) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}
+
+
+
+
+
