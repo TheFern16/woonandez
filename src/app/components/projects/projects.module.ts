@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects.component';
+import { PhotoComponent } from './photo/photo.component';
 import { projectsRouting } from './projects.routing';
 
 @NgModule({
@@ -8,6 +9,6 @@ import { projectsRouting } from './projects.routing';
     CommonModule,
     projectsRouting
   ],
-  declarations: [ ProjectsComponent ]
+  declarations: [ ProjectsComponent, PhotoComponent ]
 })
 export class ProjectsModule {}
