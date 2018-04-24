@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GuestbookComponent } from './guestbook.component';
-// import { funWithTextRouting } from './fun-with-text.routing';
+import { guestbookRouting } from './guestbook.routing';
 
 @NgModule({
   imports: [
-    CommonModule
-    // funWithTextRouting
+    CommonModule,
+    guestbookRouting
   ],
   declarations: [ GuestbookComponent ]
 })
