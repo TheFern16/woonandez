@@ -21,7 +21,8 @@ const lazyRoutes: Routes = [
   { path: 'apps', loadChildren: './components/projects/projects.module#ProjectsModule' },
   { path: 'aboutMe', loadChildren: './components/aboutme/aboutme.module#AboutMeModule' },
   { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
-  { path: 'fu'}
+  { path: 'funWithText', loadChildren: './components/funWithText/funWithText.module#FunWithTextModule' },
+
 ]
 
 @NgModule({
