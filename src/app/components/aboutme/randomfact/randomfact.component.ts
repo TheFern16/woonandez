@@ -5,7 +5,7 @@ import { Fact } from 'app/shared';
   templateUrl: './randomfact.component.html',
   styleUrls: ['./randomfact.component.css']
 })
-export class RandomfactComponent implements OnInit {
+export class RandomFactComponent implements OnInit {
   @Input('fact') fact: Fact;
 
   constructor() {}
