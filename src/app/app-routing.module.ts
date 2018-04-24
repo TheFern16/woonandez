@@ -17,13 +17,14 @@ const appRoutes: Routes = [
   { path: '**', component: HomeComponent }
 ]
 
-const lazyRoutes: Routes = [
-  { path: 'apps', loadChildren: './components/projects/projects.module#ProjectsModule' },
-  { path: 'aboutMe', loadChildren: './components/aboutme/aboutme.module#AboutMeModule' },
-  { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
-  { path: 'funWithText', loadChildren: './components/funWithText/funWithText.module#FunWithTextModule' },
-  { path: 'guestBook', loadChildren: './components/guestbook/guestbook.Module#GuestBookModule'}
-]
+// const lazyRoutes: Routes = [
+//   { path: 'aboutMe', loadChildren: './components/aboutme/aboutme.module#AboutMeModule' },
+//   { path: 'apps', loadChildren: './components/projects/projects.module#ProjectsModule' },
+//   { path: 'funWithText', loadChildren: './components/funWithText/funWithText.module#FunWithTextModule' },
+//   { path: 'guestBook', loadChildren: './components/guestbook/guestbook.Module#GuestBookModule'},
+//   { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
+//   { path: '**', redirectTo: 'home' }
+// ]
 
 @NgModule({
   imports: [ RouterModule.forRoot(appRoutes) ],
