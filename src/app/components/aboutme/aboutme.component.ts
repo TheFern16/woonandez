@@ -6,7 +6,7 @@ import { RequestService, Skill, Fact } from 'app/shared';
   templateUrl: './aboutme.component.html',
   styleUrls: ['./aboutme.component.css']
 })
-export class AboutmeComponent implements OnInit {
+export class AboutMeComponent implements OnInit {
   skills: Array<Skill> = [];
   facts: Array<Fact> = [];
   showModal: boolean = false;
