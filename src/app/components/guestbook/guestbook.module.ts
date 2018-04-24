@@ -10,4 +10,4 @@ import { guestbookRouting } from './guestbook.routing';
   ],
   declarations: [ GuestbookComponent ]
 })
-export class GuestbookComponent {}
+export class GuestbookModule {}

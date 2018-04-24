@@ -10,4 +10,4 @@ import { projectsRouting } from './projects.routing';
   ],
   declarations: [ ProjectsComponent ]
 })
-export class ProjectsComponent {}
+export class ProjectsModule {}

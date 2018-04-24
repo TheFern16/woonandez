@@ -10,4 +10,4 @@ import { homeRouting } from './home.routing';
   ],
   declarations: [ HomeComponent ]
 })
-export class HomeComponent {}
+export class HomeModule {}

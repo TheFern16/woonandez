@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
+// import { HomeComponent } from './components/home/home.component';
 
 // import { AboutmeComponent } from './components/aboutme/aboutme.component';
 // import { ModalComponent } from './components/aboutme/modal/modal.component';
@@ -16,8 +16,8 @@ import { HomeComponent } from './components/home/home.component';
 // import { FunWithTextComponent } from './components/fun-with-text/fun-with-text.component';
 // import { GuestbookComponent } from './components/guestbook/guestbook.component';
 
-import { ProjectsComponent } from './components/projects/projects.component';
-import { PhotoComponent } from './components/projects/photo/photo.component';
+// import { ProjectsComponent } from './components/projects/projects.component';
+// import { PhotoComponent } from './components/projects/photo/photo.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -27,8 +27,8 @@ import { RequestService } from './shared';
 
 @NgModule({
   declarations: [
-    AppComponent
-    // NavbarComponent,
+    AppComponent,
+    NavbarComponent
     // HomeComponent,
     // AboutmeComponent,
     // ProjectsComponent,
