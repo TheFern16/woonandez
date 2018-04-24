@@ -22,7 +22,7 @@ const lazyRoutes: Routes = [
   { path: 'aboutMe', loadChildren: './components/aboutme/aboutme.module#AboutMeModule' },
   { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
   { path: 'funWithText', loadChildren: './components/funWithText/funWithText.module#FunWithTextModule' },
-
+  { path: 'guestBook', loadChildren: './components/guestbook/guestbook.Module#GuestBookModule'}
 ]
 
 @NgModule({
