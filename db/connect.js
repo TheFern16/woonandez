@@ -6,7 +6,7 @@ const { Client } = require('pg');
 // });
 
 const client = new Client({
-  connectionString: process.event.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL,
   ssl: true
 });
 
