@@ -5,11 +5,18 @@
   <a class="btn btn-primary btn-lg" href="" (click)="toggleModal($event)">My Blog</a>
 </div>
 
-<div>
-  <img class="img-fluid" src="https://preview.ibb.co/co1145/12631392_10153371371237285_671265218019249778_n.jpg" style="width: 25%" class="img-thumbnail">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div>
+        <img class="img-fluid" src="https://preview.ibb.co/co1145/12631392_10153371371237285_671265218019249778_n.jpg" style="width: 100%" class="img-thumbnail">
+      </div>
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
 </div>
-
-<!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
 
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
   <div class="modal-dialog modal-lg miniWrapper">
@@ -20,5 +27,4 @@
     </div>
   </div>
 </div>
-
 
