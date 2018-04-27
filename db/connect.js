@@ -1,15 +1,10 @@
 const { Client } = require('pg');
+const conString = 'postgres://MatthewAFernandez:password@localhost:5432/woonandez';
+const client = new Client({
+  connectionString: process.env.DATABASE_URL === undefined ? conString : process.env.DATABASE_URL,
+  ssl: process.env.DATABASE_URL === undefined ? false : true
+});
 
-const client = new Client({});
+client.connect();
 
-if (process.env.DATABASE_URL === undefined) {
-  client.connectionString ='postgres://MatthewAFernandez:password@localhost:5432/woonandez';
-  client.connect();
-  module.exports = client;
-} else {
-  client.connectionString =  process.env.DATABASE_URL;
-  client.ssl = true;
-  client.connect();
-  module.exports = client;
-};
-
+module.exports = client;
