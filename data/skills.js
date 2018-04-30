@@ -148,6 +148,11 @@ const skills = [
     href: "https://java.com/en/",
     src: "../../assets/java.png",
     desc: "Java"
+  },
+  {
+    href: "https://spring.io/",
+    src: "../../assets/spring.png",
+    desc: "Spring"
   }
 ]
 
