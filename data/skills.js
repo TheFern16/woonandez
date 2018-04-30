@@ -6,12 +6,12 @@ const skills = [
   },
   {
     href: "https://nodejs.org/en/",
-    src: "../../assets/node.svg",
+    src: "../../assets/nodejs.png",
     desc: 'nodeJS'
   },
   {
     href: "https://www.mysql.com/",
-    src: "../../assets/MySQL.svg",
+    src: "../../assets/mysql.png",
     desc: 'MySQL'
   },
   {
@@ -21,17 +21,17 @@ const skills = [
   },
   {
     href: "https://facebook.github.io/react/",
-    src: "../../assets/react.svg",
+    src: "../../assets/react.png",
     desc: 'ReactJS'
   },
   {
     href: "https://www.mongodb.com/",
-    src: "../../assets/mongodb.svg",
+    src: "../../assets/mongodb.png",
     desc: 'mongoDB'
   },
   {
     href: "https://github.com/",
-    src: "../../assets/git.svg",
+    src: "../../assets/github.png",
     desc: 'gitHub'
   },
   {
@@ -51,7 +51,7 @@ const skills = [
   },
   {
     href: "http://docs.sequelizejs.com/",
-    src: "../../assets/sequelize.svg",
+    src: "../../assets/sequelize.png",
     desc: 'Sequelize'
   },
   {
@@ -71,12 +71,12 @@ const skills = [
   },
   {
     href: "https://www.heroku.com",
-    src: "../../assets/heroku.svg",
+    src: "../../assets/heroku.png",
     desc: "heroku"
   },
   {
     href: "https://mochajs.org/",
-    src: "../../assets/mocha.svg",
+    src: "../../assets/mocha.png",
     desc: "mocha"
   },
   {
@@ -101,12 +101,12 @@ const skills = [
   },
   {
     href: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3",
-    src: "../../assets/css.svg",
+    src: "../../assets/css.png",
     desc: "css3"
   },
   {
     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    src: "../../assets/html.svg",
+    src: "../../assets/html.png",
     desc: "html5"
   },
   {
