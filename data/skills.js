@@ -153,6 +153,11 @@ const skills = [
     href: "https://spring.io/",
     src: "../../assets/spring.png",
     desc: "Spring"
+  },
+  {
+    href: "http://hibernate.org/",
+    src: "../../assets/hibernate.png",
+    desc: "Hibernate"
   }
 ]
 
