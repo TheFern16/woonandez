@@ -143,6 +143,11 @@ const skills = [
     href: "https://www.typescriptlang.org/docs/home.html",
     src: "../../assets/typeScript.png",
     desc: "TypeScript"
+  },
+  {
+    href: "https://java.com/en/",
+    src: "../../assets/java.png",
+    desc: "Java"
   }
 ]
 
