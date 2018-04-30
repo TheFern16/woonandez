@@ -1,5 +1,5 @@
 const { Client } = require('pg');
-const conString = process.env.DATABASE_URL ? require('./con.js') : '';
+const conString = process.env.DATABASE_URL === undefined ? require('./con.js') : '';
 
 const client = new Client({
   connectionString: process.env.DATABASE_URL === undefined ? conString : process.env.DATABASE_URL,
