@@ -22,12 +22,3 @@ export interface Comment {
   comment_id: number,
   timestamp: string
 }
-
-export interface Reducer<T> {
-  (state: T, action: Action) : T;
-}
-
-export interface Action {
-  type: string;
-  payload?: any;
-}

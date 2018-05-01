@@ -1,3 +1,5 @@
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RequestService, Comment } from 'app/shared';
@@ -12,7 +14,10 @@ export class GuestbookComponent implements OnInit {
   commentForm: FormGroup;
   newComment: any;
 
-  constructor(private reqService: RequestService, private fb: FormBuilder) {}
+  constructor(
+    private reqService: RequestService,
+    private fb: FormBuilder,
+    private store: Store<any>) {}
 
   ngOnInit() {
     this.createForm();
