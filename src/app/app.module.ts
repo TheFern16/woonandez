@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { RequestService, commentsReducer } from './shared';
+import { RequestService, commentReducer } from './shared';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { RequestService, commentsReducer } from './shared';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({ comment: commentReducer })
   ],
   exports: [],
   providers: [ RequestService ],
