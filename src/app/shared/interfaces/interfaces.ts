@@ -26,3 +26,8 @@ export interface Comment {
 export interface Reducer<T> {
   (state: T, action: Action) : T;
 }
+
+export interface Action {
+  type: string;
+  payload?: any;
+}
