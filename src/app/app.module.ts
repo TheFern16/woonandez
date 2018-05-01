@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Router, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+import { StoreModule } from '@ngrx/store';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { RequestService } from './shared';
+import { RequestService, commentsReducer } from './shared';
 
 @NgModule({
   declarations: [
