@@ -43,15 +43,11 @@ export class GuestbookComponent implements OnInit {
   }
 
   createForm() {
-    this.commentForm = this.fb.group({
-      comment: ''
-    });
+    this.commentForm = this.fb.group({ comment: '' });
   }
 
   rebuildForm() {
-    this.commentForm.reset({
-      comment: ''
-    });
+    this.commentForm.reset({ comment: '' });
   }
 
   formateDate(dateString) {

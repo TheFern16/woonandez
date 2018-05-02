@@ -1,12 +1,16 @@
 import { Action } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { catchError, map, mergeMap } from 'rxjs/operators';
+import { Actions, Effect, ofType } from '@ngrx/effects';
+import { RequestService } from './request.service';
 
-export const ADD_COMMENT = 'ADD_COMMENT';
-
-export function commentReducer(state: Array<any> = [], action: Action) {
+export function commentReducer(comments: any = [], action: any) {
   switch (action.type) {
-    case ADD_COMMENT:
-      return state.push(action);
+    case ('GET_INITIAL_STATE'):
+      return comments;
+    case ('ADD_COMMENT'):
+      return comments.push(action);
     default:
-      return state;
+      return comments;
   }
 }

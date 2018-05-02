@@ -20,7 +20,7 @@ import { RequestService, commentReducer } from './shared';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({ comment: commentReducer })
+    StoreModule.forRoot({ comments: commentReducer })
   ],
   exports: [],
   providers: [ RequestService ],
