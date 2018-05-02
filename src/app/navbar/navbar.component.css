@@ -1,6 +1,7 @@
 a {
   transition: .5s;
   transform: scale(.9);
+  color: #fff;
 }
 
 a:hover {
