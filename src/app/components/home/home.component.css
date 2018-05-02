@@ -17,6 +17,12 @@ h2 {
   background-color: rgba(0,0,0,0.5);
 }
 
+.jumbotron {
+  color: #f8f9fa;
+  background-color: #004085;
+  border-color: #004085;
+}
+
 @keyframes slidein {
   0% {
     margin-left: 100%;

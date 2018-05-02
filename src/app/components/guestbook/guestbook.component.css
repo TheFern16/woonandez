@@ -7,6 +7,12 @@ h1 {
   animation-name: slidein;
 }
 
+.jumbotron {
+  color: #f8f9fa;
+  background-color: #004085;
+  border-color: #004085;
+}
+
 @keyframes slidein {
   0% {
     margin-left: 100%;
