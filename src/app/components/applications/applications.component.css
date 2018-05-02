@@ -1,0 +1,27 @@
+a {
+  transform: scale(1);
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+.card {
+  border: none;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
