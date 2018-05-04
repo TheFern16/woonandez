@@ -48,5 +48,4 @@ export class FunWithTextComponent implements OnInit {
         return this.outputText = response;
       }, err => console.log(err));
   }
-
 }

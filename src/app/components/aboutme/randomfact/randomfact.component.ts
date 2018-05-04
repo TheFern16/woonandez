@@ -11,5 +11,4 @@ export class RandomFactComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
 }

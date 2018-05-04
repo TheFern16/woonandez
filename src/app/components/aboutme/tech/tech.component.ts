@@ -12,5 +12,4 @@ export class TechComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
 }
