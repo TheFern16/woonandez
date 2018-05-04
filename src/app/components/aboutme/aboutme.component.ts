@@ -36,6 +36,10 @@ export class AboutMeComponent implements OnInit {
     }
   }
 
+  filterSkills(event) {
+    console.log('e', event);
+  }
+
   toggleModal(e) {
     e.preventDefault();
     if (e.target.classList.contains('modalWrapper') || e.target.classList.contains('btn')) {
@@ -43,12 +47,3 @@ export class AboutMeComponent implements OnInit {
     }
   }
 }
-
-// function findMatches(wordToMatch, cities) {
-//   return cities.filter(place => {
-
-//     const regex = new RegExp(wordToMatch, 'gi');
-//     console.log(regex);
-//     return place.city.match(regex) || place.state.match(regex);
-//   });
-// };
