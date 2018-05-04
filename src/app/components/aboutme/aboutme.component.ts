@@ -8,6 +8,7 @@ import { RequestService, Skill, Fact } from 'app/shared';
 })
 export class AboutMeComponent implements OnInit {
   skills: Array<Skill> = [];
+  filteredSkills: Array<Skill> = [];
   facts: Array<Fact> = [];
   showModal: boolean = false;
 
@@ -24,6 +25,7 @@ export class AboutMeComponent implements OnInit {
       .subscribe(data => {
         if (Array.isArray(data)) {
           this.skills = data;
+          this.filteredSkills = data;
         }
       });
   }
@@ -37,9 +39,9 @@ export class AboutMeComponent implements OnInit {
   }
 
   filterSkills(event) {
-    this.skills = this.skills.filter(skill => {
+    this.filteredSkills = this.skills.filter(skill => {
       const regex = new RegExp(event.target.value, 'gi');
-      return skill.desc.match(regex);
+      return skill.desc.match(regex) || '';
     });
   }
 

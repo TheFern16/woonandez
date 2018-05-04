@@ -12,7 +12,7 @@
 </div>
 
 <div class="card-columns">
-  <app-tech class="card"*ngFor="let skill of skills" [skill]="skill"></app-tech>
+  <app-tech class="card"*ngFor="let skill of filteredSkills" [skill]="skill"></app-tech>
 </div>
 
 <div class="modal modalWrapper" [style.display]="getStyle()" (click)="toggleModal($event)">
