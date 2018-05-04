@@ -74,6 +74,3 @@ export class GuestbookComponent implements OnInit {
     }
   }
 }
-
-
-

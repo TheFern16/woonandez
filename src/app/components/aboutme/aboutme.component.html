@@ -5,6 +5,10 @@
   <p>
     <button class="btn btn-primary btn-lg" (click)="toggleModal($event)">More Info</button>
   </p>
+  <label for="basic-url">Search Skills</label>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
 </div>
 
 <div class="card-columns">
@@ -16,3 +20,4 @@
     <app-modal [facts]="facts"></app-modal>
   </div>
 </div>
+

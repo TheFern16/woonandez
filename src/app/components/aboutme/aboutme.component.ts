@@ -42,5 +42,13 @@ export class AboutMeComponent implements OnInit {
       this.showModal = !this.showModal;
     }
   }
-
 }
+
+// function findMatches(wordToMatch, cities) {
+//   return cities.filter(place => {
+
+//     const regex = new RegExp(wordToMatch, 'gi');
+//     console.log(regex);
+//     return place.city.match(regex) || place.state.match(regex);
+//   });
+// };
