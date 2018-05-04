@@ -9,6 +9,7 @@ h1 {
 
 .jumbotron {
   color: #f8f9fa;
+  border-radius: 0em;
   background-color: #004085;
   border-color: #004085;
 }
