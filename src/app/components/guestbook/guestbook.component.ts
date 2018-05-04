@@ -1,4 +1,3 @@
-import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -16,8 +15,7 @@ export class GuestbookComponent implements OnInit {
 
   constructor(
     private reqService: RequestService,
-    private fb: FormBuilder,
-    private store: Store<any>) {}
+    private fb: FormBuilder) {}
 
   ngOnInit() {
     this.createForm();
