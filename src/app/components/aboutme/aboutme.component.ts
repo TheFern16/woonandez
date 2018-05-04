@@ -37,7 +37,10 @@ export class AboutMeComponent implements OnInit {
   }
 
   filterSkills(event) {
-    console.log('e', event);
+    this.skills = this.skills.filter(skill => {
+      const regex = new RegExp(event.target.value, 'gi');
+      return skill.desc.match(regex);
+    });
   }
 
   toggleModal(e) {
