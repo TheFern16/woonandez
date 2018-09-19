@@ -158,6 +158,11 @@ const skills = [
     href: "http://hibernate.org/",
     src: "../../assets/hibernate.png",
     desc: "Hibernate"
+  },
+  {
+    href: "https://jenkins.io/",
+    src: "../../assets/jenkins.png",
+    desc: "Jenkins"
   }
 ]
 
