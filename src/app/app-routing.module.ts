@@ -7,7 +7,7 @@ const lazyRoutes: Routes = [
   { path: 'funWithText', loadChildren: './components/funWithText/funWithText.module#FunWithTextModule' },
   { path: 'guestBook', loadChildren: './components/guestbook/guestbook.module#GuestbookModule'},
   { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'aboutMe' }
 ]
 
 @NgModule({
